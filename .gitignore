@@ -83,7 +83,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -116,7 +115,7 @@ dist
 .pnp.*
 
 # Vite
-dist
+# dist (commented out to include build artifacts for deployment)
 dist-ssr
 
 # MacOS
