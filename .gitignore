@@ -115,7 +115,7 @@ out
 .pnp.*
 
 # Vite
-# dist (commented out to include build artifacts for deployment)
+dist
 dist-ssr
 
 # MacOS
