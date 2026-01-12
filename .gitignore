@@ -124,6 +124,5 @@ dist-ssr
 # Project specific
 *.pdf
 extract_*.js
-generate_data.js
 policy_text*.txt
 debug_pdf.js
