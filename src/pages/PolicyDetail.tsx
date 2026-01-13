@@ -46,40 +46,31 @@ export default function PolicyDetail() {
                                 {policy.gender !== 'all' && ` (${policy.gender === 'male' ? '남성' : '여성'})`}
                             </span>
                         </div>
-                        <div className="info-item">
-                            <span className="label">관련 페이지</span>
-                            <span className="value">{policy.pageNumber}p</span>
+                        <div className="main-description">
+                            <div
+                                className="detail-text"
+                                dangerouslySetInnerHTML={{ __html: policy.detail || '' }}
+                            />
                         </div>
-                    </div>
 
-                    <div className="main-description">
-                        <h3>정책 주요 내용</h3>
-                        <p>{policy.description}</p>
-                        {policy.detail && (
-                            <div className="detail-text">
-                                {policy.detail.split('\n').map((line, i) => <p key={i}>{line}</p>)}
+                        {policy.relatedSites && policy.relatedSites.length > 0 && (
+                            <div className="related-sites">
+                                <h3>관련 사이트</h3>
+                                <div className="links">
+                                    {policy.relatedSites.map((site, idx) => (
+                                        <a key={idx} href={site.url} target="_blank" rel="noopener noreferrer" className="site-link">
+                                            {site.name} 🔗
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
                         )}
-                    </div>
 
-                    {policy.relatedSites && policy.relatedSites.length > 0 && (
-                        <div className="related-sites">
-                            <h3>관련 사이트</h3>
-                            <div className="links">
-                                {policy.relatedSites.map((site, idx) => (
-                                    <a key={idx} href={site.url} target="_blank" rel="noopener noreferrer" className="site-link">
-                                        {site.name} 🔗
-                                    </a>
-                                ))}
+                        {policy.imageUrl && (
+                            <div className="detail-image">
+                                <img src={policy.imageUrl} alt={policy.title} />
                             </div>
-                        </div>
-                    )}
-
-                    {policy.imageUrl && (
-                        <div className="detail-image">
-                            <img src={policy.imageUrl} alt={policy.title} />
-                        </div>
-                    )}
+                        )}
                 </section>
             </article>
         </div>

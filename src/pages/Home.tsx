@@ -22,7 +22,13 @@ export default function Home() {
 
             // Age group filter
             if (selectedAgeGroup && selectedAgeGroup !== 'all') {
-                if (!policy.ageGroups.includes(selectedAgeGroup) && !policy.ageGroups.includes('all')) {
+                // STRICT FILTER: Check if the policy explicitly targets the selected group.
+                // We exclude 'all' tagged items from this check unless 'all' is the ONLY tag (which shouldn't happen for strict filtering requests usually, but depends on data).
+                // Actually, user said: "If I choose Child, show Child ONLY".
+                // If a policy is ['all'], it applies to Child too, technically.
+                // But user wants "Child's stuff". 
+                // So we check strict inclusion of the specific key.
+                if (!policy.ageGroups.includes(selectedAgeGroup)) {
                     return false;
                 }
             }
