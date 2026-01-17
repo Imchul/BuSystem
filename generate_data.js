@@ -248,7 +248,7 @@ function parse() {
     // Write individual files
     for (const [catId, catItems] of Object.entries(itemsByCategory)) {
         const filename = `src/data/policies_${catId}.ts`;
-        const fileContent = `import { Policy } from './policies';\n\nexport const policies_${catId}: Policy[] = ${JSON.stringify(catItems, null, 2)};`;
+        const fileContent = `import type { Policy } from './policies';\n\nexport const policies_${catId}: Policy[] = ${JSON.stringify(catItems, null, 2)};`;
         fs.writeFileSync(filename, fileContent);
         console.log(`Written ${filename} (${catItems.length} items)`);
     }

@@ -1,4 +1,4 @@
-import { Policy } from './policies';
+import type { Policy } from './policies';
 
 export const policies_defense: Policy[] = [
   {
