@@ -404,6 +404,7 @@ export interface Policy {
   keywords: string[];
   pageNumber: number;
   detail?: string;
+  implementationDate?: string;
   relatedSites?: { name: string; url: string }[];
   imageUrl?: string;
 }
