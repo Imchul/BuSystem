@@ -15,6 +15,7 @@ export interface Policy {
   title: string;
   category: string;
   department: string;
+  contactInfo?: string;
   description: string;
   ageGroups: ('infant' | 'child' | 'youth' | 'adult' | 'senior' | 'all')[];
   gender: 'all' | 'male' | 'female';

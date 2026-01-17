@@ -260,6 +260,7 @@ function parse() {
             for (let j = 1; j < 10 && i + j < lines.length; j++) {
                 if (lines[i + j].match(/☎|\d{2,3}-\d{3,4}-\d{4}/)) {
                     contactInfo = lines[i + j].replace(/\*\*/g, '').trim();
+                    item.contactInfo = contactInfo; // Save to item
                     if (!item.department) {
                         // Extract department if possible
                         const deptMatch = contactInfo.match(/([가-힣\s]+과)/);
@@ -341,8 +342,9 @@ function parse() {
             const cleanParas = paragraphs.filter(p => !p.includes('☎') && !p.includes('www') && p.trim().length > 10);
 
             if (cleanParas.length > 0) {
-                item.description = cleanParas[0].replace(/\*\*/g, '').replace(/\n/g, ' ').trim();
-                // Truncate
+                // Use smart extraction for description
+                item.description = extractFirstSentence(cleanParas[0]);
+                // Truncate if still too long (fallback)
                 if (item.description.length > 200) item.description = item.description.substring(0, 197) + '...';
             } else {
                 item.description = item.title + "에 대한 상세 내용입니다.";
@@ -398,6 +400,7 @@ export interface Policy {
   title: string;
   category: string;
   department: string;
+  contactInfo?: string;
   description: string;
   ageGroups: ('infant' | 'child' | 'youth' | 'adult' | 'senior' | 'all')[];
   gender: 'all' | 'male' | 'female';
@@ -457,19 +460,18 @@ export const policies: Policy[] = [
 
 parse();
 
+function extractFirstSentence(text) {
+    if (!text) return '';
+    // Remove markdown symbols and common prefixes
+    let clean = text.replace(/\*\*/g, '').replace(/\[.*?\]/g, '').replace(/^\s*[-•□]\s*/, '').replace(/\n/g, ' ').trim();
+    // Split by ending punctuation (., ?, !) followed by space or end of string
+    // But be careful not to split inside quotes.
+    const match = clean.match(/^.*?[.?!](\s|$)/);
+    return match ? match[0].trim() : clean;
+}
+
 function cleanContent(lines, contactInfo, department) {
-    let html = '';
-
-    // Add Contact Info Header
-    if (department && contactInfo) {
-        html += `<div class="policy-contact-header">
-                    <span class="contact-label"><span class="icon">📞</span> 문의처</span>
-                    <span class="contact-value">${department} ${contactInfo}</span>
-                 </div>`;
-        html += `<hr class="policy-divider" />`;
-    }
-
-    html += `<div class="md-content">`;
+    let html = `<div class="md-content">`;
 
     let buffer = '';
 
