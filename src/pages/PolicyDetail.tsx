@@ -31,6 +31,11 @@ export default function PolicyDetail() {
                             {categoryInfo.icon} {categoryInfo.name}
                         </span>
                         <span className="policy-department">{policy.department}</span>
+                        {policy.implementationDate && (
+                            <span className="implementation-date-badge">
+                                📅 시행: {policy.implementationDate}
+                            </span>
+                        )}
                     </div>
                     <h1>{policy.title}</h1>
                 </header>
@@ -47,6 +52,7 @@ export default function PolicyDetail() {
                             </span>
                         </div>
                         <div className="main-description">
+                            {/* Note: Start of content area */}
                             <div
                                 className="detail-text"
                                 dangerouslySetInnerHTML={{ __html: policy.detail || '' }}

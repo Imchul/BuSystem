@@ -160,7 +160,8 @@ function parse() {
                     ageGroups: [],
                     gender: 'all',
                     keywords: [],
-                    contentBody: '' // Temp storage
+                    contentBody: '',
+                    implementationDate: '' // Initialize
                 });
             }
         }
@@ -285,13 +286,50 @@ function parse() {
                     const normPot = normalize(potentialTitle);
                     // Check if this matches ANY other policy title
                     if (allTitlesNorm.has(normPot) && normPot !== normalize(item.title)) {
-                        break;
+                        // Exclude Summary Sections
+                        let isSummary = false;
+                        for (let k = 1; k <= 5; k++) {
+                            if (lines[i - k] && lines[i - k].includes('자세한 내용은')) isSummary = true;
+                            if (lines[i + k] && lines[i + k].includes('자세한 내용은')) isSummary = true;
+                        }
+
+                        // Only break if it is NOT a summary section
+                        if (!isSummary) {
+                            break;
+                        }
                     }
+                }
+
+                // Check Table Rows (Lines starting with |)
+                if (trimmed.startsWith('|')) {
+                    // Check if this row contains a new title that matches our list
+                    // This is tricky because table rows contain lots of text.
+                    // But usually we want to consume tables that belong to the current policy.
+                    // The only risk is running into the NEXT policy's table row if the next policy is ONLY a table.
+                    // But we rely on "Title" detection for that.
                 }
 
                 captured.push(line);
                 i++;
             }
+
+            // Extract Implementation Date from captured content (look for pattern in table rows)
+            // Pattern: ('26.1.1.) or ('26. 1. 1.) or (2026.1.1.) usually at the end of a cell or line
+            const dateRegex = /\(’?\d{2}\.\s*\d{1,2}\.\s*\d{1,2}\.?\s*(?:예정|시행)?\)/;
+            let implementationDate = '';
+
+            // Search in captured lines (especially table rows at the end)
+            for (let k = captured.length - 1; k >= 0; k--) {
+                const match = captured[k].match(dateRegex);
+                if (match) {
+                    implementationDate = match[0].replace(/[()]/g, '').trim();
+                    break;
+                }
+            }
+
+            // Clean Content
+            item.detail = cleanContent(captured, contactInfo, item.department);
+            item.implementationDate = implementationDate; // Add this field to Policy interface
 
             const fullText = captured.join('\n').trim();
             item.contentBody = fullText;
@@ -310,47 +348,7 @@ function parse() {
                 item.description = item.title + "에 대한 상세 내용입니다.";
             }
 
-            // 2. Detail HTML
-            // Convert MD text to basic HTML.
-            // Highlight specific lines?
-            // "추진배경" etc are missing. We just format the whole text nicely.
-            // Detect Bullets
-            let html = '';
 
-            // Add Contact if found
-            if (contactInfo) {
-                html += `<h3>📞 문의처</h3><p>${contactInfo}</p><br/>`;
-            }
-
-            // Body formatting
-            // We want to verify if we can split by sections.
-            // Use regex for implicit structure?
-            // "Paragraph ending with 다." -> likely text.
-            // "Line starting with bullet" -> list.
-
-            // Heuristic for "Main Content" vs "Background"
-            // Usually Background is first. Main Content follows.
-
-            let formattedBody = fullText
-                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>') // Bold
-                .replace(/☎.*$/gm, '') // Remove contact line from body if duplicate
-                .replace(/^2026년부터.*$/gm, '')
-                .trim();
-
-            // Convert newlines to <br> but preserve paragraph breaks
-            formattedBody = formattedBody.split('\n').map(l => {
-                l = l.trim();
-                if (!l) return '<br/>';
-                if (l.startsWith('·') || l.startsWith('-') || l.startsWith('●')) {
-                    return `<li style="list-style:none; margin-left:10px;">${l}</li>`;
-                }
-                return `${l}<br/>`;
-            }).join('');
-
-            // Wrap in a div
-            html += `<div class="md-content"><h3>💡 상세내용</h3>${formattedBody}</div>`;
-
-            item.detail = html;
 
             // Links
             const urlMatch = fullText.match(/https?:\/\/[^\s]+/g);
@@ -457,3 +455,89 @@ export const policies: Policy[] = [
 }
 
 parse();
+
+function cleanContent(lines, contactInfo, department) {
+    let html = '';
+
+    // Add Contact Info Header
+    if (department && contactInfo) {
+        html += `<div class="policy-contact-header">
+                    <span class="contact-label"><span class="icon">📞</span> 문의처</span>
+                    <span class="contact-value">${department} ${contactInfo}</span>
+                 </div>`;
+        html += `<hr class="policy-divider" />`;
+    }
+
+    html += `<div class="md-content">`;
+
+    let buffer = '';
+
+    // Filter out "Summary" links, "Page number", AND Contact Info from body to avoid duplication
+    const filteredLines = lines.filter(l => {
+        const trimmed = l.trim();
+        if (trimmed.match(/^자세한 내용은.*p\.\d+/)) return false;
+        if (trimmed.match(/^\d+$/)) return false; // Lonely page numbers
+        if (l.includes('2026년부터 이렇게 달라집니다')) return false;
+        if (trimmed === '・ ・') return false;
+        // Filter contact info if it looks like the header we just added
+        if (trimmed.includes('☎') || (trimmed.includes(department) && trimmed.match(/\d{2,3}-\d{3,4}-\d{4}/))) return false;
+        return true;
+    });
+
+    for (let i = 0; i < filteredLines.length; i++) {
+        let line = filteredLines[i].trim();
+
+        // Remove known garbage artifacts
+        line = line.replace(/~~.*?~~/g, '');
+
+        if (!line) {
+            // Empty line.
+            // Check if buffer needs to wait (e.g. sentence not finished).
+            // If buffer DOES NOT end with punctuation, ignore this empty line (treat as soft break).
+            if (buffer && !buffer.match(/[.?!]["”')]*$/)) {
+                continue;
+            }
+
+            // Otherwise, it's a real paragraph break.
+            if (buffer) {
+                html += `<div class="policy-text-block">${buffer}</div>`;
+                buffer = '';
+            }
+            continue;
+        }
+
+        // Detect List Items
+        const isListItem = line.match(/^[-*・>]|\d+\.\s|\(\d+\)|※/);
+
+        if (isListItem) {
+            if (buffer) {
+                html += `<div class="policy-text-block">${buffer}</div>`;
+                buffer = '';
+            }
+            // Format as bullet point
+            let content = line;
+            if (line.startsWith('・') || line.startsWith('-')) {
+                content = line.substring(1).trim();
+            }
+            html += `<div class="policy-bullet-item"><span class="bullet">•</span> ${content}</div>`;
+        } else {
+            // Normal text line.
+            // Join if buffer implies continuation.
+            if (buffer && !buffer.match(/[.?!]["”')]*$/) && !buffer.match(/[.?!]["”')]*\s*$/)) {
+                buffer += ' ' + line;
+            } else {
+                if (buffer) {
+                    html += `<div class="policy-text-block">${buffer}</div>`;
+                }
+                buffer = line;
+            }
+        }
+    }
+
+    if (buffer) {
+        html += `<div class="policy-text-block">${buffer}</div>`;
+    }
+
+    html += `</div>`;
+    return html;
+}

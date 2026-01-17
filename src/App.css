@@ -550,3 +550,68 @@ body {
   height: auto;
   object-fit: cover;
 }
+
+/* Refined Policy Content Styles */
+.policy-contact-header {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contact-label {
+  font-weight: 700;
+  color: #475569;
+  margin-right: 0.5rem;
+}
+
+.contact-value {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.policy-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 1.5rem 0;
+}
+
+.policy-bullet-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: #334155;
+  align-items: flex-start;
+}
+
+.policy-bullet-item .bullet {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.policy-text-block {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.implementation-date-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #ecfdf5;
+  color: #059669;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  border: 1px solid #d1fae5;
+}
