@@ -1,4 +1,5 @@
 import fs from 'fs';
+import path from 'path';
 
 const categoryMap = {
     '01': 'finance',
@@ -28,6 +29,20 @@ const categoryNames = {
 
 const catIdToName = Object.entries(categoryNames).reduce((acc, [k, v]) => { acc[v] = k; return acc; }, {});
 
+function cleanTitleForMatching(title) {
+    // Remove category prefixes commonly found in titles
+    let cleaned = title;
+    Object.keys(categoryNames).forEach(catName => {
+        cleaned = cleaned.replace(new RegExp(catName, 'g'), '');
+    });
+    // Remove leading numbers, common words like '분야별'
+    cleaned = cleaned.replace(/^\d{2}\s+/, '')
+        .replace(/분야별 달라지는 주요 제도/g, '')
+        .replace(/\s+/g, '') // Remove all spaces for matching
+        .trim();
+    return cleaned;
+}
+
 function parse() {
     const text = fs.readFileSync('policy_text_v3.txt', 'utf8');
 
@@ -44,22 +59,19 @@ function parse() {
             pageContents[currentPage] = "";
         } else if (currentPage > 0) {
             pageContents[currentPage] += line + "\n";
-            // Accumulate TOC candidate text (approx range)
             if (currentPage >= 4 && currentPage <= 20) {
                 tocText += line + "  ";
             }
         }
     }
 
-    // 2. Parse Items from TOC with Strict Category State Machine
+    // 2. Parse Items from TOC
     let items = [];
-    const categories = Object.keys(categoryMap).sort(); // 01, 02...
-
-    // Create sections by finding header indices
+    const categories = Object.keys(categoryMap).sort();
     let catIndices = [];
 
     for (const catId of categories) {
-        const namePart = catIdToName[catId].split('·')[0]; // First word e.g. "금융", "교육"
+        const namePart = catIdToName[catId].split('·')[0];
         const regex = new RegExp(`${catId}\\s+${namePart}`);
         const match = tocText.match(regex);
         if (match) {
@@ -68,18 +80,14 @@ function parse() {
     }
     catIndices.sort((a, b) => a.index - b.index);
 
-    // Now process per block
     for (let i = 0; i < catIndices.length; i++) {
         const currentCat = catIndices[i];
         const nextCat = catIndices[i + 1];
-
         const start = currentCat.index;
         const end = nextCat ? nextCat.index : tocText.length;
-
         const blockText = tocText.substring(start, end);
         const currentCatId = categoryMap[currentCat.id];
 
-        // Parse items in this block
         let match;
         const blockItemRegex = /([^\d]+?)\s+([가-힣]+부|[가-힣]+처|[가-힣]+청|[가-힣]+위원회|국가데이터처)\s+(\d{3})/g;
 
@@ -88,16 +96,20 @@ function parse() {
             const dept = match[2];
             const page = parseInt(match[3]);
 
-            // Cleanup Title
+            // Cleanup Title for Display
             let title = rawTitle
-                .replace(/^\d{2}\s+[가-힣·]+/, '')
+                .replace(/^\d{2}\s+[가-힣·]+/, '') // Remove "01 금융" prefix
                 .replace(/분야별 달라지는 주요 제도/g, '')
                 .replace(/https?:\/\/\S+/g, '')
                 .trim();
 
+            // Extra cleanup: If title starts with the category name, remove it
+            const catName = catIdToName[currentCat.id];
+            if (title.startsWith(catName)) {
+                title = title.substring(catName.length).trim();
+            }
+
             if (title.length < 2) continue;
-            // Strict duplicate check: title AND page must match to be a dupe.
-            // Actually, we trust the TOC list.
             if (items.find(x => x.title === title && x.pageNumber === page)) continue;
 
             items.push({
@@ -116,64 +128,92 @@ function parse() {
 
     console.log(`Parsed ${items.length} items from TOC.`);
 
-    // 3. Extract Details (HTML Format)
+    // 3. Extract Details (Full Content + HTML)
+    let matchedCount = 0;
     for (let item of items) {
         let found = false;
-        // Search offset logic
-        const targetPdfPage = item.pageNumber + 41;
+        const targetPdfPage = item.pageNumber + 41; // Offset confirmed
 
-        // Scan range
         for (let p = targetPdfPage - 2; p <= targetPdfPage + 2; p++) {
             const content = pageContents[p] || "";
-            // Check title match
             const cleanContent = content.replace(/\s+/g, '');
-            const cleanTitle = item.title.replace(/\s+/g, '');
+            const matchTitle = cleanTitleForMatching(item.title);
 
-            if (cleanContent.includes(cleanTitle.substring(0, 15))) { // Partial match safe
-                // Found page
+            // Fuzzy check: check if first 10 chars of cleaned title align, or if significant substring matches
+            if (cleanContent.includes(matchTitle.substring(0, Math.min(10, matchTitle.length)))) {
+                found = true;
+                matchedCount++;
 
-                // Extract description (One-liner under title)
+                // -- Extraction Logic --
+
+                // 1. Description (Summary)
+                // Use the first meaningful sentence that is NOT the title or meta info
                 const lines = content.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-                const titleIdx = lines.findIndex(l => l.replace(/\s+/g, '').includes(cleanTitle.substring(0, 10)));
-
                 let desc = "";
-                if (titleIdx !== -1) {
-                    for (let i = titleIdx + 1; i < lines.length; i++) {
-                        const line = lines[i];
-                        if (line.match(/(추진배경|주요내용|시행일)/)) break;
-                        if (line.includes('www.') || line.includes('자세한 내용')) continue;
-                        desc += line + " ";
+                // Try to find where title ends
+                let bodyStartIndex = 0;
+                for (let i = 0; i < lines.length; i++) {
+                    // Heuristic: skip lines that look like headers or page nums
+                    if (lines[i].includes('2026년부터') || lines[i].includes('Page') || lines[i].includes('www.')) continue;
+                    // If line matches title significantly
+                    if (lines[i].replace(/\s+/g, '').includes(matchTitle.substring(0, 5))) {
+                        bodyStartIndex = i + 1;
+                        break;
+                    }
+                }
+
+                // Grab first paragraph after title
+                if (bodyStartIndex < lines.length) {
+                    for (let i = bodyStartIndex; i < lines.length; i++) {
+                        if (lines[i].match(/(추진배경|주요내용|시행일|지원대상|기대효과)/)) break;
+                        desc += lines[i] + " ";
                     }
                 }
                 item.description = desc.trim();
-                if (!item.description) item.description = "2026년부터 달라지는 정책입니다.";
-                if (item.description.length > 150) item.description = item.description.substring(0, 150) + "...";
+                if (!item.description) item.description = "2026년부터 시행되는 새로운 정책입니다.";
+                if (item.description.length > 200) item.description = item.description.substring(0, 197) + "...";
 
-                // Extract HTML Details
+                // 2. HTML Detail Construction
                 let htmlParts = [];
 
-                const backgroundMatch = content.match(/추진배경\s+([\s\S]*?)(?=주요내용|시행일|$)/);
-                const mainContentMatch = content.match(/주요내용\s+([\s\S]*?)(?=시행일|$)/);
-                const enforcementMatch = content.match(/시행일\s+([\s\S]*?)(?=재정경제부|[가-힣]+부|$)/);
+                // Define sections to look for
+                const sections = [
+                    { key: '추진배경', icon: '📋' },
+                    { key: '지원대상', icon: '🎯' }, // New
+                    { key: '주요내용', icon: '💡' },
+                    { key: '기대효과', icon: '✨' }, // New
+                    { key: '시행일', icon: '📅' }
+                ];
 
-                if (backgroundMatch) {
-                    const text = backgroundMatch[1].trim().replace(/\n/g, '<br/>');
-                    htmlParts.push(`<h3>📋 추진배경</h3><p>${text}</p>`);
-                }
-                if (mainContentMatch) {
-                    const text = mainContentMatch[1].trim().replace(/\n/g, '<br/>');
-                    htmlParts.push(`<h3>💡 주요내용</h3><p>${text}</p>`);
-                }
-                if (enforcementMatch) {
-                    const text = enforcementMatch[1].trim().replace(/\n/g, '<br/>');
-                    htmlParts.push(`<h3>📅 시행일</h3><p>${text}</p>`);
+                // Remove the "header" part of the page (roughly) to avoid matching TOC or running headers
+                let cleanPageContent = content;
+
+                sections.forEach((sec, idx) => {
+                    // Regex lookahead for next section or end of specific sections
+                    // We need to dynamically build regex to stop at ANY of the other keywords
+                    const otherKeys = sections.filter(s => s.key !== sec.key).map(s => s.key).join('|');
+                    // Regex: Key word, capture everything untill next key word or "재정경제부"(footer-ish) or end
+                    const regex = new RegExp(`${sec.key}\\s+([\\s\\S]*?)(?=${otherKeys}|재정경제부|[가-힣]+부|$)`, 'i');
+                    const match = cleanPageContent.match(regex);
+
+                    if (match && match[1].trim()) {
+                        const text = match[1].trim().replace(/\n/g, '<br/>');
+                        htmlParts.push(`<h3>${sec.icon} ${sec.key}</h3><p>${text}</p>`);
+                    }
+                });
+
+                // Fallback: If no structured sections found, use the whole body content
+                if (htmlParts.length === 0) {
+                    // Filter out likely garbage lines
+                    const meaningfulLines = lines.filter(l =>
+                        !l.match(/2026년부터 이렇게/) &&
+                        !l.match(/--- Page/) &&
+                        !l.includes('www.')
+                    ).join('<br/>');
+                    htmlParts.push(`<h3>📄 상세내용</h3><p>${meaningfulLines}</p>`);
                 }
 
-                if (htmlParts.length > 0) {
-                    item.detail = htmlParts.join('<br/><br/>');
-                } else {
-                    item.detail = `<p>${content}</p>`;
-                }
+                item.detail = htmlParts.join('<br/><br/>');
 
                 // Related Sites
                 const urls = content.match(/https?:\/\/[^\s]+/g);
@@ -182,90 +222,70 @@ function parse() {
                 }
 
                 inferTags(item);
-                found = true;
                 break;
             }
         }
 
         if (!found) {
-            item.description = "2026년부터 시행되는 정책입니다.";
-            item.detail = "<p>상세 정보를 준비 중입니다.</p>";
+            console.log(`Not found content for: ${item.title} (Page ${item.pageNumber}, Target ${item.pageNumber + 41})`);
+            item.description = "상세 내용을 불러오지 못했습니다.";
+            item.detail = "<p>PDF 원문 추출에 실패했습니다. 추후 업데이트 예정입니다.</p>";
             inferTags(item);
         }
     }
 
-    const tsOutput = generateTS(items);
-    fs.writeFileSync('src/data/policies.ts', tsOutput);
-    console.log('Generated src/data/policies.ts');
+    console.log(`Matched content for ${matchedCount}/${items.length} items.`);
+
+    // 4. Split and Write Files
+    if (!fs.existsSync('src/data')) fs.mkdirSync('src/data');
+
+    // Group items by category
+    const itemsByCategory = {};
+    for (const catId of Object.values(categoryMap)) {
+        itemsByCategory[catId] = items.filter(i => i.category === catId);
+    }
+
+    // Write individual files
+    for (const [catId, catItems] of Object.entries(itemsByCategory)) {
+        const filename = `src/data/policies_${catId}.ts`;
+        const fileContent = `import { Policy } from './policies';\n\nexport const policies_${catId}: Policy[] = ${JSON.stringify(catItems, null, 2)};`;
+        fs.writeFileSync(filename, fileContent);
+        console.log(`Written ${filename} (${catItems.length} items)`);
+    }
+
+    // Write main aggregated file
+    const mainFileContent = generateMainTS(Object.keys(itemsByCategory));
+    fs.writeFileSync('src/data/policies.ts', mainFileContent);
+    console.log('Generated src/data/policies.ts (Aggregator)');
 }
 
 function inferTags(item) {
     const text = (item.title + ' ' + item.description).toLowerCase();
-
-    // Age Groups - STRICT FILTERING LOGIC
-    // If specific age keywords found, ONLY add that age group.
-    // If NO specific age found, add 'all'.
     item.ageGroups = [];
-
     let isSpecific = false;
     if (text.includes('영유아') || text.includes('어린이') || text.includes(' 0-6세')) { item.ageGroups.push('infant'); isSpecific = true; }
     if (text.includes('아동') || text.includes('초등') || text.includes('학생')) { item.ageGroups.push('child'); isSpecific = true; }
     if (text.includes('청소년') || text.includes('청년') || text.includes('대학생') || text.includes('중고생')) { item.ageGroups.push('youth'); isSpecific = true; }
     if (text.includes('중장년') || text.includes('직장인')) { item.ageGroups.push('adult'); isSpecific = true; }
     if (text.includes('어르신') || text.includes('노인') || text.includes('고령자') || text.includes('연금')) { item.ageGroups.push('senior'); isSpecific = true; }
+    if (!isSpecific) item.ageGroups.push('all');
 
-    if (!isSpecific) {
-        item.ageGroups.push('all');
-    }
-
-    // Gender
     if (text.includes('여성') || text.includes('임산부') || text.includes('산모')) item.gender = 'female';
     else if (text.includes('남성') || text.includes('군인') || text.includes('장병')) item.gender = 'male';
     else item.gender = 'all';
 
-    // Keywords (Ensure 4+)
-    const keywordDB = [
-        '세제', '금융', '복지', '교육', '보육', '여성', '안전', '환경', '주거', '청년', '노인', '장애인',
-        '농촌', '교통', '의료', '소상공인', '육아', '세금', '지원금', '장학금', '일자리', '창업', '주택',
-        '대출', '금리', '저출산', '다자녀', '한부모', '군인', '예비군', '에너지', '친환경',
-        '탄소', '디지털', 'AI', '데이터', '연구', '개발', '수출', '관세', '저작권', '문화', '예술',
-        '체육', '관광', '양육', '출산', '건강', '보험', '카드', '공제', '투자', '부담', '완화'
-    ];
-
+    const keywordDB = ['세제', '금융', '복지', '교육', '보육', '여성', '안전', '환경', '주거', '청년', '노인', '장애인', '농촌', '교통', '의료', '소상공인', '육아', '세금', '지원금', '장학금', '일자리', '창업', '주택', '대출', '금리', '저출산', '다자녀', '한부모', '군인', '예비군', '에너지', '친환경', '탄소', '디지털', 'AI', '데이터'];
     item.keywords = keywordDB.filter(k => text.includes(k.toLowerCase()));
-
-    // Category Fallbacks
     if (item.department) item.keywords.push(item.department);
     item.keywords.push(catIdToName[item.category] || '기타');
-
-    const catKeywords = {
-        'finance': ['경제', '재정', '자산'],
-        'education': ['학교', '학습', '수업'],
-        'welfare': ['사회', '복지', '생활'],
-        'culture': ['문화', '여가'],
-        'environment': ['기후', '생태'],
-        'industry': ['혁신', '산업'],
-        'transport': ['도로', '운전'],
-        'agriculture': ['농업', '식품'],
-        'defense': ['안보', '보훈'],
-        'safety': ['재난', '예방']
-    };
-
-    if (catKeywords[item.category]) {
-        item.keywords.push(...catKeywords[item.category]);
-    }
-
-    item.keywords = [...new Set(item.keywords)].slice(0, 6); // Cap at 6, ensure unique
-    // Ensure min 4?
-    while (item.keywords.length < 4) {
-        item.keywords.push('2026');
-        item.keywords.push('정책');
-    }
-    item.keywords = [...new Set(item.keywords)];
+    item.keywords = [...new Set(item.keywords)].slice(0, 6);
+    while (item.keywords.length < 3) item.keywords.push('정책');
 }
 
-function generateTS(items) {
-    return `export interface Policy {
+function generateMainTS(categories) {
+    const imports = categories.map(c => `import { policies_${c} } from './policies_${c}';`).join('\n');
+    const exports = `
+export interface Policy {
   id: number;
   title: string;
   category: string;
@@ -309,8 +329,11 @@ export const ageGroupLabels = {
   all: '전 연령',
 };
 
-export const policies: Policy[] = ${JSON.stringify(items, null, 2)};
+export const policies: Policy[] = [
+${categories.map(c => `  ...policies_${c}`).join(',\n')}
+];
 `;
+    return imports + '\n' + exports;
 }
 
 parse();
