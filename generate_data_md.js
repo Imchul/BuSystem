@@ -484,11 +484,37 @@ function cleanContent(lines, contactInfo, department) {
         return true;
     });
 
+    // State for table parsing
+    let inTable = false;
+    let tableBuffer = [];
+
     for (let i = 0; i < filteredLines.length; i++) {
         let line = filteredLines[i].trim();
 
         // Remove known garbage artifacts
         line = line.replace(/~~.*?~~/g, '');
+
+        // Check for Table Block
+        if (line.startsWith('|')) {
+            if (!inTable) {
+                // If we were parsing text, flush it
+                if (buffer) {
+                    html += `<div class="policy-text-block">${buffer}</div>`;
+                    buffer = '';
+                }
+                inTable = true;
+            }
+            tableBuffer.push(line);
+            continue;
+        } else {
+            // Not a table line.
+            if (inTable) {
+                // End of table block -> Render it
+                html += renderTable(tableBuffer);
+                tableBuffer = [];
+                inTable = false;
+            }
+        }
 
         if (!line) {
             // Empty line.
@@ -534,10 +560,64 @@ function cleanContent(lines, contactInfo, department) {
         }
     }
 
+    // Flush remaining buffers
+    if (inTable && tableBuffer.length > 0) {
+        html += renderTable(tableBuffer);
+    }
     if (buffer) {
         html += `<div class="policy-text-block">${buffer}</div>`;
     }
 
     html += `</div>`;
+    return html;
+}
+
+function renderTable(lines) {
+    if (lines.length === 0) return '';
+
+    // Basic Markdown Table Parser
+    let html = '<div class="policy-table-container"><table class="policy-table">';
+
+    // Find separator line (e.g., |---|---|)
+    const separatorIdx = lines.findIndex(l => l.match(/^\|?[\s-:]*\|[\s-:]*\|/));
+
+    let startBody = 0;
+
+    if (separatorIdx > 0) {
+        // Has header
+        html += '<thead>';
+        // Usually the line immediately before separator is the header
+        // But what if there are multiple header lines? MD tables usually have 1 header row.
+        // Let's assume lines[0] to lines[separatorIdx-1] are headers? 
+        // Standard GFM allows only 1 header row.
+
+        const headerRow = lines[separatorIdx - 1];
+        const cleanRow = headerRow.replace(/^\|/, '').replace(/\|$/, '');
+        const cols = cleanRow.split('|');
+        html += '<tr>';
+        cols.forEach(c => html += `<th>${c.trim()}</th>`);
+        html += '</tr></thead>';
+
+        startBody = separatorIdx + 1;
+    } else {
+        // No separator found? Treat all as body or just fail?
+        // Some MD tables might just be grid-like.
+        // Or properly formatted but we missed the regex.
+        // Let's just render all as rows.
+    }
+
+    html += '<tbody>';
+    for (let i = startBody; i < lines.length; i++) {
+        const line = lines[i];
+        // Skip the separator line if we didn't filter it out yet (redundant check)
+        if (line.match(/^\|?[\s-:]*\|[\s-:]*\|/)) continue;
+
+        const cleanRow = line.replace(/^\|/, '').replace(/\|$/, '');
+        const cols = cleanRow.split('|');
+        html += '<tr>';
+        cols.forEach(c => html += `<td>${c.trim()}</td>`);
+        html += '</tr>';
+    }
+    html += '</tbody></table></div>';
     return html;
 }

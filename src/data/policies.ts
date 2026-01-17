@@ -20,7 +20,6 @@ export interface Policy {
   gender: 'all' | 'male' | 'female';
   keywords: string[];
   pageNumber: number;
-  implementationDate?: string;
   detail?: string;
   relatedSites?: { name: string; url: string }[];
   imageUrl?: string;
@@ -41,7 +40,7 @@ export const categories: Category[] = [
   { id: 'environment', name: '환경·에너지·기상', icon: '🌿', color: '#10B981' },
   { id: 'industry', name: '산업·중소기업', icon: '🏭', color: '#6366F1' },
   { id: 'transport', name: '국토·교통', icon: '🚗', color: '#14B8A6' },
-  { id: 'agriculture', name: '농림·수산·식품', icon: '🌾', color: '#713F12' },
+  { id: 'agriculture', name: '농림·수산·식품', icon: '🌾', color: '#713F12' }, 
   { id: 'defense', name: '국방·병무', icon: '🎖️', color: '#64748B' },
   { id: 'safety', name: '행정·안전·질서', icon: '🛡️', color: '#EF4444' },
 ];
