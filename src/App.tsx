@@ -9,6 +9,16 @@ function App() {
       <div className="app">
         <header className="header">
           <div className="header-content">
+            <div className="header-actions">
+              <a
+                href="https://www.moef.go.kr/com/cmm/fms/FileDown.do;jsessionid=r8OD_1yTF4zCivL2qLe6w6k80_wxYa5Eg6vUgKC2.node40?atchFileId=ATCH_000000000030674&fileSn=3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pdf-download-btn"
+              >
+                📥 2026 정책 원본 PDF
+              </a>
+            </div>
             <h1>2026년부터 이렇게 달라집니다</h1>
             <p className="subtitle">나이와 성별에 맞는 정책 정보를 찾아보세요</p>
           </div>

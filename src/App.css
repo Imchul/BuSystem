@@ -44,7 +44,35 @@ body {
 .header-content {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
+
+.header-actions {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+}
+
+.pdf-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s;
+}
+
+.pdf-download-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
 
 .header h1 {
   font-size: 2rem;
@@ -482,7 +510,7 @@ body {
 }
 
 .detail-text p {
-    margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .related-sites {
@@ -492,8 +520,8 @@ body {
 }
 
 .related-sites h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .site-link {
@@ -512,12 +540,13 @@ body {
 }
 
 .detail-image {
-    margin-top: 2rem;
-    border-radius: 12px;
-    overflow: hidden;
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
 }
+
 .detail-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

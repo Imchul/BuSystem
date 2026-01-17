@@ -1,4 +1,4 @@
-import { policies_safety } from './policies_safety';
+
 import { policies_finance } from './policies_finance';
 import { policies_education } from './policies_education';
 import { policies_welfare } from './policies_welfare';
@@ -8,6 +8,7 @@ import { policies_industry } from './policies_industry';
 import { policies_transport } from './policies_transport';
 import { policies_agriculture } from './policies_agriculture';
 import { policies_defense } from './policies_defense';
+import { policies_safety } from './policies_safety';
 
 export interface Policy {
   id: number;
@@ -54,7 +55,6 @@ export const ageGroupLabels = {
 };
 
 export const policies: Policy[] = [
-  ...policies_safety,
   ...policies_finance,
   ...policies_education,
   ...policies_welfare,
@@ -63,5 +63,6 @@ export const policies: Policy[] = [
   ...policies_industry,
   ...policies_transport,
   ...policies_agriculture,
-  ...policies_defense
+  ...policies_defense,
+  ...policies_safety,
 ];
