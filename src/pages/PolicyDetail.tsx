@@ -71,6 +71,7 @@ export default function PolicyDetail() {
                                 <img src={policy.imageUrl} alt={policy.title} />
                             </div>
                         )}
+                    </div>
                 </section>
             </article>
         </div>
