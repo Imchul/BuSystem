@@ -7,7 +7,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "과학기술정보통신부",
     "pageNumber": 176,
-    "description": "「기업부설연구소등의 연구개발 지원에 관한 법률」(2025.",
+    "description": "기업부설연구소 체계적 육성 법안 마련",
     "ageGroups": [
       "all"
     ],
@@ -45,7 +45,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "산업통상부",
     "pageNumber": 178,
-    "description": "「계량에 관한 법률 」 개정으로 2026년 3월 3일부터는 계량기 수입업자가 신고서 및 관련",
+    "description": "계량기 수입업 신고절차 간소화",
     "ageGroups": [
       "all"
     ],
@@ -64,7 +64,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "산업통상부",
     "pageNumber": 179,
-    "description": "정부는 국민안전 확보를 위해 자가사용 목적의 직접구매 해외제품 안전관리 제도를 2026년 6월",
+    "description": "해외직구 위해제품 안전관리 강화",
     "ageGroups": [
       "all"
     ],
@@ -84,7 +84,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "해양수산부",
     "pageNumber": 180,
-    "description": "그간 예선업과 도선업은 선박금융의 지원 대상이 아니었으나 개정된 한국해양진흥공사법",
+    "description": "예선업·도선업에 대한 선박금융지원 확대",
     "ageGroups": [
       "all"
     ],
@@ -104,7 +104,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "해양수산부",
     "pageNumber": 181,
-    "description": "물류공급망 안정화를 위해 물류기업이 해외진출 시 수행하는 타당성 조사,",
+    "description": "물류기업 해외진출 시",
     "ageGroups": [
       "all"
     ],
@@ -123,7 +123,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "해양수산부",
     "pageNumber": 182,
-    "description": "인천항 내 중소 물류기업 경쟁력 제고 및 투자 부담*, 물류비용 경감을 위한 스마트",
+    "description": "인천항 스마트 공동물류센터 전면 개장",
     "ageGroups": [
       "all"
     ],
@@ -142,7 +142,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "중소벤처기업부",
     "pageNumber": 183,
-    "description": "스타트업이 성장하는 과정 중에서 겪는 법률, 세무 등의 어려움을 해결하는 가장 첫 번째 창구",
+    "description": "스타트업 원스톱 지원센터 전국 운영",
     "ageGroups": [
       "all"
     ],
@@ -161,7 +161,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "중소벤처기업부",
     "pageNumber": 184,
-    "description": "지역자원과 상권을 연결하여 지역·글로벌 거점으로 육성하고, 소규모 골목상권의 성장기반",
+    "description": "상권 활성화 사업 '상권 르네상스 2.0'",
     "ageGroups": [
       "all"
     ],
@@ -180,7 +180,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "중소벤처기업부",
     "pageNumber": 185,
-    "description": "「중소기업창업 지원법 시행령」 개정(2025.",
+    "description": "창업기업 인정범위 및 기준 완화",
     "ageGroups": [
       "all"
     ],
@@ -206,7 +206,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "지식재산처",
     "pageNumber": 186,
-    "description": "국민의 창의적 아이디어가 국가 정책이 되고, 실제 사업으로 현실화되는 「모두의 아이디어",
+    "description": "국민 아이디어 정책화 지원 강화",
     "ageGroups": [
       "all"
     ],
@@ -225,7 +225,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "지식재산처",
     "pageNumber": 187,
-    "description": "2026년 5월 28일부터 영업비밀 해외 유출을 방지하는 데 기여한 공이 큰 자 또는 이를 신고한",
+    "description": "영업비밀 해외유출 신고 포상금 도입",
     "ageGroups": [
       "all"
     ],
@@ -244,7 +244,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "관세청",
     "pageNumber": 188,
-    "description": "고가·프리미엄 상품도 전자상거래 수출을 간편하게 할 수 있도록 간이수출신고 기준금액을 현행",
+    "description": "전자상거래 간이수출 기준 400만원 상향",
     "ageGroups": [
       "all"
     ],
@@ -263,7 +263,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "관세청",
     "pageNumber": 189,
-    "description": "회계처리에 상당 시일이 소요되는 풀필먼트 수출 확정가격신고 부담이 완화되도록 수출신고",
+    "description": "잠정가격신고 대상물품의 수출신고 제도 개선",
     "ageGroups": [
       "all"
     ],
@@ -282,7 +282,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "조달청",
     "pageNumber": 190,
-    "description": "새로운 아이디어와 기술로 개발된 제품을 정부가 먼저 구매하여 초기시장을 창출함으로써",
+    "description": "혁신제품 공공구매 목표비율 상향",
     "ageGroups": [
       "all"
     ],
@@ -301,7 +301,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "조달청",
     "pageNumber": 191,
-    "description": "국가기술자격 ‘공공조달관리사’가 새롭게 도입됩니다.",
+    "description": "국가기술자격 ‘공공조달관리사’가 새롭게 도입됨",
     "ageGroups": [
       "all"
     ],
@@ -320,7 +320,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "조달청",
     "pageNumber": 192,
-    "description": "2026년부터 조달청 설계공모 심사에 ‘민간건축사 심사위원’을 신규 위촉하여 심사의 공정성과",
+    "description": "조달청 설계공모 심사위원 다양화",
     "ageGroups": [
       "all"
     ],
@@ -339,7 +339,7 @@ export const policies_industry: Policy[] = [
     "category": "industry",
     "department": "산림청",
     "pageNumber": 193,
-    "description": "|국가첨단전략<br>사업 연구시설<br>입목축적 기준<br>예외적용|● \u0007산지전용 허가기준 중 입목축적<br>기준<br>· \u0007국가첨단전략산업 연구시설의<br>경우 입목축적기준 적용|● \u0007산지전용 허가기준 중 입목축적<br>기준<br>· \u0007국가첨단전략산업 연구시설의<br>경우 입목축적 기준 미적용|산림청<br>산지정책과<br>(042-481-4141)|",
+    "description": "국가첨단전략사업 연구시설 입목축적 기준 예외적용",
     "ageGroups": [
       "all"
     ],

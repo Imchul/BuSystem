@@ -7,7 +7,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "국가보훈부",
     "pageNumber": 79,
-    "description": "이제 참전유공자 배우자께서도 생계지원금을 받을 수 있습니다.",
+    "description": "참전유공자 배우자 생계지원금 지급",
     "ageGroups": [
       "all"
     ],
@@ -27,7 +27,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "국가보훈부",
     "pageNumber": 80,
-    "description": "재해부상군경(사망한 경우 보훈대상자의 배우자 또는 자녀)의 부양가족수당 수급을 위한",
+    "description": "재해부상군경의 부양가족수당 수급을 위한",
     "ageGroups": [
       "all"
     ],
@@ -46,7 +46,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "국가보훈부",
     "pageNumber": 81,
-    "description": "‘국가보훈 장해진단서’ 발급병원을 49개소에서 140개소로 대폭 확대합니다.",
+    "description": "국가보훈 장해진단서 발급병원 확대",
     "ageGroups": [
       "all"
     ],
@@ -65,13 +65,12 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "보건복지부",
     "pageNumber": 82,
-    "description": "2026년 1월 1일부터 기준 중위소득이 1인 가구 7.20%, 4인 가구 6.51% 인상되어 국민의 복지",
+    "description": "기준 중위소득 역대 최대폭 인상",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "복지",
       "보건복지부",
       "기타"
     ],
@@ -85,7 +84,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "보건복지부",
     "pageNumber": 83,
-    "description": "2026년 3월 27일「의료·요양 등 지역 돌봄의 통합지원에 관한 법률」(24.",
+    "description": "의료·요양·돌봄 통합서비스 전국 시행",
     "ageGroups": [
       "all"
     ],
@@ -105,7 +104,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "보건복지부",
     "pageNumber": 84,
-    "description": "국민연금법 개정안(25.",
+    "description": "국민연금 보험료율 및 소득대체율 조정",
     "ageGroups": [
       "senior"
     ],
@@ -124,7 +123,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "보건복지부",
     "pageNumber": 85,
-    "description": "군 복무, 출산이라는 사회적으로 가치 있는 활동에 대하여 국민연금 가입기간을 추가로",
+    "description": "출산·군복무 연금 크레딧 지원 확대",
     "ageGroups": [
       "senior"
     ],
@@ -143,7 +142,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "보건복지부",
     "pageNumber": 86,
-    "description": "2026년부터 국민의 건강 보장권 향상을 위해 폐기능검사가 국가건강검진 항목으로 신규",
+    "description": "국가건강검진에 폐기능검사 도입",
     "ageGroups": [
       "all"
     ],
@@ -162,7 +161,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "보건복지부",
     "pageNumber": 87,
-    "description": "2026년 3월 「가족돌봄 등 위기아동청년 지원에 관한 법률」 시행에 따라 가족돌봄, 고립은둔",
+    "description": "고립·은둔 청년 지원 법적근거 마련",
     "ageGroups": [
       "child",
       "youth"
@@ -183,7 +182,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "보건복지부",
     "pageNumber": 88,
-    "description": "2026년부터 생계가 어려운 국민 누구나 방문하면 먹거리·생필품을 지원받을 수 있는 ‘먹거리",
+    "description": "취약계층 먹거리 기본보장 지원 시행",
     "ageGroups": [
       "all"
     ],
@@ -202,19 +201,16 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "기후에너지환경부",
     "pageNumber": 89,
-    "description": "그간 기초수급가구 중 노인, 장애인, 영유아, 임산부, 한부모가족, 소년소녀가정, 중증질환자",
+    "description": "다자녀 기초수급가구 에너지바우처 지원",
     "ageGroups": [
-      "infant",
-      "senior"
+      "all"
     ],
-    "gender": "female",
+    "gender": "all",
     "keywords": [
-      "노인",
-      "장애인",
       "다자녀",
-      "한부모",
       "에너지",
-      "기후에너지환경부"
+      "기후에너지환경부",
+      "기타"
     ],
     "implementationDate": "",
     "contactInfo": "기후에너지환경부 기후적응과 ☎ 044-201-6962",
@@ -226,7 +222,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 90,
-    "description": "2025년 9월 9일 개정된 「노동조합 및 노동관계조정법」 (이하 「노동조합법」)이 2026년 3월",
+    "description": "노란봉투법(노조법 2·3조) 시행",
     "ageGroups": [
       "all"
     ],
@@ -245,7 +241,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 91,
-    "description": "2026년 1월부터 장애인 고용의무 미이행사업주의 점진적 고용의무 이행을 유도하고 장애인",
+    "description": "중증장애인 고용 촉진 장려금 지급",
     "ageGroups": [
       "all"
     ],
@@ -265,7 +261,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 92,
-    "description": "2026년 1월 1일부터 ’일학습병행자격*‘과 국가기술자격(과정평가형)을 연계(7개 종목",
+    "description": "일학습병행 자격의 국가자격 인정",
     "ageGroups": [
       "all"
     ],
@@ -284,7 +280,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 93,
-    "description": "육아기 자녀를 둔 근로자의 자녀 돌봄 기회 확대를 위해 육아기 10시 출근제 지원 사업을",
+    "description": "육아기 10시 출근제 도입 지원",
     "ageGroups": [
       "all"
     ],
@@ -304,7 +300,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 94,
-    "description": "육아휴직 등에 대한 중소기업 인건비 부담을 완화하기 위해 육아휴직 대체인력지원금",
+    "description": "육아기 대체인력 지원금 확대",
     "ageGroups": [
       "all"
     ],
@@ -344,7 +340,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 96,
-    "description": "2026년 1월 1일부터 최저임금이 시간급 10,320원으로 인상됩니다.",
+    "description": "2026년 최저임금 시급 1만원 시대",
     "ageGroups": [
       "all"
     ],
@@ -363,7 +359,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 97,
-    "description": "2026년 1월부터 국민취업지원제도 구직촉진수당 인상을 통해 구직자의 경제적 부담을",
+    "description": "국민취업지원제도 수당 월 50☞90만원",
     "ageGroups": [
       "all"
     ],
@@ -382,7 +378,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 98,
-    "description": "2026년 청년일자리도약장려금은 청년의 지역 정착과 지역 기업의 인력난 완화를 위해",
+    "description": "비수도권 청년채용 장려금 우대",
     "ageGroups": [
       "youth"
     ],
@@ -403,7 +399,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 99,
-    "description": "2026년부터 일손부족일자리 동행인센티브를 지원합니다.",
+    "description": "빈일자리 취업시 인센티브 신설",
     "ageGroups": [
       "all"
     ],
@@ -423,7 +419,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 100,
-    "description": "2026년부터 고령자계속고용장려금을 신청하는 비수도권 기업에 대한 지원을 확대합니다.",
+    "description": "비수도권 중기 고령자 계속고용 지원",
     "ageGroups": [
       "senior"
     ],
@@ -442,7 +438,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 101,
-    "description": "’26년부터 정규직 전환 지원 사업이 재개됩니다.",
+    "description": "비정규직의 정규직 전환 지원 재개",
     "ageGroups": [
       "all"
     ],
@@ -461,13 +457,12 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 102,
-    "description": "청소년·청년 기술인재를 조기에 발굴해 숙련기술 인재로 성장을 지원하기 위해 “기특한명장”",
+    "description": "숙련기술인 '기특한 명장' 선정 육성",
     "ageGroups": [
-      "youth"
+      "all"
     ],
     "gender": "all",
     "keywords": [
-      "청년",
       "고용노동부",
       "기타"
     ],
@@ -481,7 +476,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 103,
-    "description": "산업현장에서 혼합기, 파쇄기 또는 분쇄기(이하 “혼합기 등”이라 한다)로 인한 사고를 예방하기",
+    "description": "위험기계(혼합기 등) 안전검사 의무화",
     "ageGroups": [
       "all"
     ],
@@ -501,7 +496,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 104,
-    "description": "가연성물질이 있는 장소에서 용접·용단 등 화재위험작업을 하는 경우 화재·폭발사고 예방을",
+    "description": "화재위험작업 예방조치 의무 강화",
     "ageGroups": [
       "all"
     ],
@@ -539,7 +534,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 106,
-    "description": "중증장애인의 구직활동 중 경제적 어려움을 완화하여 적극적인 지원고용 훈련참여 여건 마련을",
+    "description": "장애인 지원고용 훈련수당 인상",
     "ageGroups": [
       "all"
     ],
@@ -559,7 +554,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 107,
-    "description": "저소득층 장애인의 구직활동 중 경제적 어려움을 완화하여 적극적인 구직활동을 지속할 수",
+    "description": "장애인 구직촉진수당 인상",
     "ageGroups": [
       "all"
     ],
@@ -579,7 +574,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 108,
-    "description": "장애인 표준사업장 생산품의 경쟁력 강화 및 판로 확대를 위해 홍보·마케팅 지원 사업을 새롭게",
+    "description": "장애인 표준사업장 판로 확대 지원",
     "ageGroups": [
       "all"
     ],
@@ -599,7 +594,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 109,
-    "description": "명단공표 제외 요건을 개선하고 서류 제출 부담을 줄이는 한편, 채용 이행 여부에 따른 공표를",
+    "description": "장애인 고용의무 위반 공표기준 강화",
     "ageGroups": [
       "all"
     ],
@@ -619,7 +614,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 110,
-    "description": "경계선 지능청년*들의 직업 능력을 키우고 노동시장에 참여할 수 있도록 지원하기 위해 맞춤형",
+    "description": "경계선지능 청년 맞춤 취업지원 신설",
     "ageGroups": [
       "youth"
     ],
@@ -639,7 +634,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 111,
-    "description": "사회적 가치를 추구하는 창업팀을 선발, 사회적 목적 실현부터 사업화까지 창업의 전 과정을",
+    "description": "사회적기업 창업 초기 자금 지원",
     "ageGroups": [
       "all"
     ],
@@ -659,7 +654,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 112,
-    "description": "사회적기업 등의 자금조달 부담을 완화하고 자금 유동성 확보를 기여하기 위해 이차보전 지원",
+    "description": "사회적기업 대상 이차보전 지원 사업 신설",
     "ageGroups": [
       "all"
     ],
@@ -678,7 +673,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 113,
-    "description": "|사회적경제<br>생태계 조성을<br>위한 전략사업별<br>지역생태계<br>활성화 사업 시행|<신규><br>|● \u0007사업내용<br>· \u0007노동통합, 통합돌봄 등 지역문제<br>해결을 위한 협력 사업 추진 지원<br> <br>● \u0007지원방식<br>· \u0007비수도권 지자체 공모 선정 및 매칭<br>지원|고용노동부<br>사회적기업과<br>(044-202- 7424,...",
+    "description": "사회적경제 생태계 조성을 위한 전략사업별 지역생태계 활성화 사업 시행",
     "ageGroups": [
       "all"
     ],
@@ -696,7 +691,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 114,
-    "description": "|사회적경제<br>생태계 조성을<br>위한 사회적가치<br>창출 활성화<br>사업 시행|<신규>|● \u0007사업내용<br>· \u0007사회적기업의 사회적가치를<br>회폐로 환산하여 사업비 지원<br> <br>● \u0007지원방식<br>· \u0007지자체 매칭 지원|고용노동부<br>사회적기업과<br>(044-202-7426,<br>7422)| |사회적기업에<br>대한 인건비<br...",
+    "description": "사회적경제 생태계 조성을 위한 사회적가치 창출 활성화 사업 시행",
     "ageGroups": [
       "all"
     ],
@@ -715,7 +710,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "고용노동부",
     "pageNumber": 115,
-    "description": "사회적기업이 신규 고용한 취약계층 근로자에 대한 인건비를 지원합니다.",
+    "description": "사회적기업이 신규 고용한 취약계층 근로자에 대한 인건비를 지원함",
     "ageGroups": [
       "all"
     ],
@@ -734,7 +729,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "성평등가족부",
     "pageNumber": 116,
-    "description": "민간부문 성별 다양성 및 일·생활 균형 조직문화 조성·확산을 위해 기업 CEO·인사담당자 대상",
+    "description": "기업 인사담당자 대상 조직문화 개선(다양성) 교육 확대",
     "ageGroups": [
       "all"
     ],
@@ -754,7 +749,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "성평등가족부",
     "pageNumber": 117,
-    "description": "2026년부터 정부와 지자체는 시·도 및 시·군·구의 참여위원회 등 지역 청소년 정책 참여기구",
+    "description": "지역 청소년 참여기구 운영 활성화",
     "ageGroups": [
       "youth"
     ],
@@ -791,7 +786,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "해양수산부",
     "pageNumber": 119,
-    "description": "선원의 생존권과 생활 안정을 도모하기 위하여 유기 구제비용*과 재해보상 보험금(이하",
+    "description": "유기구제비용 및 재해보상금 압류방지 전용계좌 도입",
     "ageGroups": [
       "all"
     ],
@@ -810,7 +805,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "해양수산부",
     "pageNumber": 120,
-    "description": "그간 내항선에 승선하는 선원 중 내국인 선원만 해상원격 의료지원 서비스*를 제공받을 수",
+    "description": "내항선 해상원격 의료지원 서비스 확대",
     "ageGroups": [
       "all"
     ],
@@ -830,7 +825,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "식품의약품안전처",
     "pageNumber": 121,
-    "description": "최신기술이 적용된 제품이 의료현장 등에 신속히 반영되도록 의료기기 변경허가 제도를",
+    "description": "의료기기 변경허가 방식 전환",
     "ageGroups": [
       "all"
     ],
@@ -850,7 +845,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "식품의약품안전처",
     "pageNumber": 122,
-    "description": "희귀·필수의약품의 긴급도입을 확대를 추진해 환자의 치료권보장을 강화하겠습니다.",
+    "description": "긴급도입의약품 품목 확대",
     "ageGroups": [
       "all"
     ],
@@ -869,7 +864,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "식품의약품안전처",
     "pageNumber": 123,
-    "description": "정부가 추진하는 주문생산 제도 확대를 통해 국가필수의약품의 안정공급을 강화하겠습니다.",
+    "description": "국가필수의약품 안정공급을 위한 주문생산 확대",
     "ageGroups": [
       "all"
     ],
@@ -888,7 +883,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "식품의약품안전처",
     "pageNumber": 124,
-    "description": "국내 백신 연구·개발 업체를 대상으로 하는 고위험병원체 관련 품질시험·분석 서비스를 통해",
+    "description": "백신 등 바이오의약품 품질시험·분석 서비스 확대",
     "ageGroups": [
       "all"
     ],
@@ -907,7 +902,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "식품의약품안전처",
     "pageNumber": 125,
-    "description": "천연물을 원료로 하는 의약품(천연물의약품)의 안전 및 품질관리를 정부 차원에서 지원하는",
+    "description": "천연물의약품 안전·품질관리 지원 전담기관 출범",
     "ageGroups": [
       "all"
     ],
@@ -927,7 +922,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "식품의약품안전처",
     "pageNumber": 126,
-    "description": "소비자 안전을 확보하고 수출규제 장벽에 대응하는 산업 경쟁력 강화를 위해 화장품 안전성",
+    "description": "화장품 안전성 평가 제도 도입",
     "ageGroups": [
       "all"
     ],
@@ -947,7 +942,7 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "식품의약품안전처",
     "pageNumber": 127,
-    "description": "K-화장품의 할랄* 신시장 진출을 지원하기 위해 2026년부터 화장품 할랄인증을 위한 글로벌",
+    "description": "화장품 할랄인증 등 글로벌 진출 지원",
     "ageGroups": [
       "all"
     ],
@@ -986,13 +981,12 @@ export const policies_welfare: Policy[] = [
     "category": "welfare",
     "department": "질병관리청",
     "pageNumber": 129,
-    "description": "그간 장티푸스, A형간염 등 수인성·식품매개감염병에 감염되면 의무적으로 의료기관에서",
+    "description": "의무입원·격리치료 대상 감염병 정비",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "의료",
       "질병관리청",
       "기타"
     ],

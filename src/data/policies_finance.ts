@@ -7,7 +7,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 8,
-    "description": "장기고용 유인 강화 및 납세 협력 비용 경감을 위해 통합고용세액공제의 공제액 구조를 개편하고",
+    "description": "고용공제 구조 개편 및 사후관리 합리화",
     "ageGroups": [
       "all"
     ],
@@ -26,7 +26,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 9,
-    "description": "웹툰콘텐츠산업의 글로벌 경쟁력 지원을 위하여 웹툰콘텐츠 제작비용에 대한 소득세·법인세",
+    "description": "웹툰 제작비 최대 30% 세액공제 신설",
     "ageGroups": [
       "all"
     ],
@@ -45,7 +45,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 10,
-    "description": "월 20만원인 보육수당 비과세 한도를 자녀 1인당 월 20만원으로 확대합니다.",
+    "description": "자녀 수 비례 보육수당 비과세 확대",
     "ageGroups": [
       "all"
     ],
@@ -65,14 +65,13 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 11,
-    "description": "현재 시행 중인 교육비 세액공제(15%) 대상에 2026년부터 초등학교 저학년 자녀의 예체능",
+    "description": "초등 저학년 예체능 학원비 세액공제",
     "ageGroups": [
       "child"
     ],
     "gender": "all",
     "keywords": [
       "세제",
-      "교육",
       "재정경제부",
       "기타"
     ],
@@ -86,12 +85,13 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 12,
-    "description": "시행일: 2026년 1월 1일",
+    "description": "다자녀 가구 신용카드 소득공제 확대",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
+      "다자녀",
       "재정경제부",
       "기타"
     ],
@@ -104,7 +104,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 13,
-    "description": "고배당 상장법인*으로부터 거주자가 받은 배당소득에 대해 종합소득 과세 대상에서 제외하여",
+    "description": "고배당기업 배당소득 분리과세 도입",
     "ageGroups": [
       "all"
     ],
@@ -123,13 +123,12 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 14,
-    "description": "금융투자소득세가 폐지됨에 따라 금융투자소득세 도입을 전제로 인하하였던 증권거래세",
+    "description": "증권거래세율 단계적 인하",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "금융",
       "재정경제부",
       "기타"
     ],
@@ -143,7 +142,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 15,
-    "description": "|상호금융<br>예탁금·출자금<br>비과세<br>적용기한 연장 및<br>적용범위 합리화|● \u0007상호금융 예탁금·출자금에 대한<br>이자·배당소득세 감면<br>· \u0007(대상자) 조합원·준조합원·회원 등<br>· \u0007(대상소득) 예탁금·출자금의<br>이자·배당소득<br>· \u0007(감면한도) 예탁금 3,000만원,<br>출자금 2,000만원<br>· \u0007(과세특례) ...",
+    "description": "상호금융 예탁금·출자금 비과세 적용기한 연장 및",
     "ageGroups": [
       "all"
     ],
@@ -162,7 +161,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 16,
-    "description": "그간 연초의 ‘잎’으로 한정되어 있던 담배 정의가 연초(잎·줄기·뿌리 포함)나 니코틴(천연·인공",
+    "description": "합성 니코틴도 담배로 규정·과세",
     "ageGroups": [
       "all"
     ],
@@ -181,7 +180,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 17,
-    "description": "체납(지정납부기한 경과) 이후 납부일까지 발생하는 납부지연가산세 산출방법이 일(日) 단위",
+    "description": "납부지연가산세 산출방식 간소화",
     "ageGroups": [
       "all"
     ],
@@ -200,7 +199,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 18,
-    "description": "폐업이후 재기하기 위해 노력하는 영세개인사업자 지원을 위해 체납액에 대해 분납을 허용하고,",
+    "description": "영세사업자 체납액 징수특례 연장",
     "ageGroups": [
       "all"
     ],
@@ -219,7 +218,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 19,
-    "description": "소규모 창업중소기업의 세부담 경감을 위해 생계형 창업중소기업 기준금액을 상향합니다.",
+    "description": "생계형 창업 감면 기준매출 상향",
     "ageGroups": [
       "all"
     ],
@@ -239,7 +238,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 20,
-    "description": "영상콘텐츠산업의 글로벌 경쟁력 지원을 위하여 영상콘텐츠 제작비용 세액공제의 기본공제율이",
+    "description": "영상콘텐츠 제작비 세제지원 확대",
     "ageGroups": [
       "all"
     ],
@@ -259,12 +258,13 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 21,
-    "description": "|부분복귀하는<br>해외진출기업에<br>대한 소득세·<br>법인세·관세<br>감면 확대|● \u0007유턴기업에 대한<br>소득·법인세·관세 감면* 대상<br>* \u0007(소득·법인세) 7년 100%<br>+3년 50%<br>(관세) 유턴기업 선정일로부터 5년간<br>100%(완전복귀), 50%(부분복귀)<br>· \u0007완전복귀 (국외사업장 양도·폐쇄)<br>- \u0007국외...",
+    "description": "해외진출기업 부분복귀 세제감면 확대",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
+      "세제",
       "재정경제부",
       "기타"
     ],
@@ -277,7 +277,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 22,
-    "description": "위기지역 창업기업* 등에 대한 세액감면을 합리화하기 위하여, 감면 요건을 신설하고 중소기업에",
+    "description": "위기지역 창업기업 감면요건 합리화",
     "ageGroups": [
       "all"
     ],
@@ -297,7 +297,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 23,
-    "description": "지역균형발전을 지원하고 제도를 합리화하기 위하여, 지방이전 기업 세제지원 제도의 적용대상,",
+    "description": "지방이전 기업 세제지원 요건 완화",
     "ageGroups": [
       "all"
     ],
@@ -317,14 +317,13 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 24,
-    "description": "장애인 일자리 창출 지원을 위하여, 장애인 표준사업장에 대한 소득세·법인세 감면율을",
+    "description": "장애인 표준사업장 세액감면 확대",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
       "장애인",
-      "일자리",
       "재정경제부",
       "기타"
     ],
@@ -338,7 +337,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 25,
-    "description": "「고용보험법」상 육아휴직급여, 공무원·사립학교 직원의 육아휴직수당에 대한 소득세 비과세",
+    "description": "육아휴직급여 비과세 대상 확대",
     "ageGroups": [
       "all"
     ],
@@ -358,7 +357,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 26,
-    "description": "현재 시행 중인 본인과 부양가족의 교육비에 대한 15% 세액공제가 대학생 자녀의 아르바이트",
+    "description": "대학생 교육비 공제 소득요건 폐지",
     "ageGroups": [
       "child",
       "youth"
@@ -379,7 +378,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 27,
-    "description": "소득기반 고용보험 시행 시기(2027년)에 맞추어 상용근로자 간이지급명세서 월별",
+    "description": "간이지급명세서 제출시기 조정 유예",
     "ageGroups": [
       "all"
     ],
@@ -398,7 +397,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 28,
-    "description": "조림기간 5년 이상인 임지의 임목을 벌채ㆍ양도하여 발생하는 소득에 대한 비과세",
+    "description": "임목 벌채·양도소득 비과세 확대",
     "ageGroups": [
       "all"
     ],
@@ -417,7 +416,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 29,
-    "description": "사적연금(본인 납입액 등)을 연금 형태로 종신 수령 시 원천징수세율을 인하*(4→3%)합니다.",
+    "description": "연금소득 원천징수세율 3~5% 인하",
     "ageGroups": [
       "senior"
     ],
@@ -436,7 +435,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 30,
-    "description": "AI 전문가 등 해외 우수인력의 국내 복귀 시 10년간 소득세 50% 감면 적용기한이 3년",
+    "description": "해외 우수인력 국내복귀 소득세 감면",
     "ageGroups": [
       "all"
     ],
@@ -455,7 +454,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 31,
-    "description": "10만원 초과 20만원 이하 고향사랑기부금에 대한 세액공제율을 15→40%로 상향합니다.",
+    "description": "고향사랑기부금 세액공제 한도 상향",
     "ageGroups": [
       "all"
     ],
@@ -474,13 +473,12 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 32,
-    "description": "주거를 달리하는 부부에 대해 각각 월세세액공제를 적용합니다.",
+    "description": "무주택 주말부부 별도 월세공제 허용",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "주거",
       "주택",
       "재정경제부",
       "기타"
@@ -495,7 +493,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 33,
-    "description": "상가임대료를 인하한 임대사업자 세액공제* 적용기한을 3년 연장(~2028.",
+    "description": "착한 임대인 세액공제 기한 연장",
     "ageGroups": [
       "all"
     ],
@@ -514,7 +512,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 34,
-    "description": "사회적기업의 일반기부금 손금산입한도가 확대됩니다.",
+    "description": "사회적기업 기부금 세제혜택 확대",
     "ageGroups": [
       "all"
     ],
@@ -534,7 +532,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 35,
-    "description": "중소기업이 취득한 스마트공장 등 설비투자에 대한 가속상각 특례가 신설됩니다.",
+    "description": "중기 스마트공장 설비 세제지원 신설",
     "ageGroups": [
       "all"
     ],
@@ -554,13 +552,12 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 36,
-    "description": "인구감소지역 주택 취득자에 대해 적용되는 1세대 1주택 과세 특례를 비수도권",
+    "description": "세컨드홈 과세특례 대상지역 확대",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "주택",
       "재정경제부",
       "기타"
     ],
@@ -574,7 +571,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 37,
-    "description": "중고자동차 매입세액공제 특례 제도를 합리화하기 위해 중고자동차에 대한 공제한도를",
+    "description": "중고차 매입세액공제 한도 신설",
     "ageGroups": [
       "all"
     ],
@@ -593,7 +590,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 38,
-    "description": "|현금매출명세서<br>제출 의무 범위<br>확대|● \u0007현금매출명세서 제출 의무 업종<br>· \u0007보건업, 변호사업 등|● \u0007제출 의무 업종 추가<br>· \u0007(좌동)<br>· \u0007미디어 콘텐츠 창작업<br>☞ \u0007(참고) 재정경제부홈페이지><br>보도자료>2025년 세법개정안 발표<br>(‘25.7월)|부가가치세법| |현금매출명세서<br>제출 의무 범위<br...",
+    "description": "면세농산물 의제매입세액공제 연장",
     "ageGroups": [
       "all"
     ],
@@ -611,7 +608,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 39,
-    "description": "부가가치세법 신고 시 현금매출명세서를 의무 제출하여야하는 업종에 유튜버 등 미디어 콘텐츠",
+    "description": "현금매출명세서 제출대상 업종 확대",
     "ageGroups": [
       "all"
     ],
@@ -630,7 +627,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 40,
-    "description": "거짓세금계산서 발급·수취*에 대한 가산세율을 공급가액의 3%→ 4%로 상향합니다.",
+    "description": "가짜 세금계산서 가산세율 상향",
     "ageGroups": [
       "all"
     ],
@@ -650,7 +647,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 41,
-    "description": "납세지 관할 세무서장은 부가가치세의 납세보전 또는 조사를 위하여 납세의무자에게 사업장",
+    "description": "사업운영 입증 증빙제출 의무화",
     "ageGroups": [
       "all"
     ],
@@ -669,7 +666,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 42,
-    "description": "연금계좌의 간접투자소득에 대해서 외국납부세액공제가 적용됩니다.",
+    "description": "연금계좌 간접투자 외국납부세액공제",
     "ageGroups": [
       "senior"
     ],
@@ -688,7 +685,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 43,
-    "description": "외국법인이 연락사무소 현황자료를 제출하지 않거나, 거짓으로 제출하는 경우에는 최대",
+    "description": "외국법인 자료 미제출시 과태료 부과",
     "ageGroups": [
       "all"
     ],
@@ -707,7 +704,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "재정경제부",
     "pageNumber": 44,
-    "description": "국제결제은행(BIS)의 이자·배당·유가증권 양도소득 등 국내 투자 소득에 대해서는 납세의무를",
+    "description": "BIS 국내 투자소득 과세 면제",
     "ageGroups": [
       "all"
     ],
@@ -726,13 +723,12 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "국가데이터처",
     "pageNumber": 45,
-    "description": "국가데이터처는 최근의 소비패턴 및 소비지출 구조를 반영하여 통계의 현실 반영도를 제고하기",
+    "description": "소비자물가지수 2025년 기준 개편",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "데이터",
       "국가데이터처",
       "기타"
     ],
@@ -746,7 +742,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "국세청",
     "pageNumber": 46,
-    "description": "국세징수법 압류금지 소액재산 기준은 185만원에서 250만원으로 2023년에 상향되었음에도",
+    "description": "근로·자녀장려금 압류금지 금액 상향",
     "ageGroups": [
       "all"
     ],
@@ -765,7 +761,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "관세청",
     "pageNumber": 47,
-    "description": "|보세공장<br>제품의 과세방식<br>신청기한<br>수입신고<br>전까지 확대|· \u0007원칙 : ①<br>신청·승인시 : ② 또는 ①|· \u0007(좌 동)|관세청<br>보세산업지원과<br>(042-481-<br> 7821)| |보세공장<br>제품의 과세방식<br>신청기한<br>수입신고<br>전까지 확대|① \u0007(제품 과세) 보세공장에서 생산한<br>물품을 물품의...",
+    "description": "보세공장 과세방식 신청기한 확대",
     "ageGroups": [
       "all"
     ],
@@ -783,7 +779,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "관세청",
     "pageNumber": 48,
-    "description": "그간 발급 이후 아무런 정보 변경 없이 계속하여 사용이 가능했던 개인통관고유부호가",
+    "description": "개인통관고유부호 유효기간(5년) 도입",
     "ageGroups": [
       "all"
     ],
@@ -802,7 +798,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "관세청",
     "pageNumber": 49,
-    "description": "|법규준수도<br>평가제도<br>통합으로<br>투명하고<br> 효율적인<br>평가체계 마련|● \u0007법규준수도 평가제도가 관세행정<br>업무분야별로 존재<br> <br>● \u0007평가항목 등 평가기준 비공개<br> <br>● \u0007관세협력도(가점) 항목이 한정적|● \u0007하나의 법규준수도 제도로 통합<br> <br>● \u0007평가항목 등 평가기준 공개<br> <br>● \u0007...",
+    "description": "법규준수도 평가체계 통합 및 개선",
     "ageGroups": [
       "all"
     ],
@@ -820,7 +816,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "조달청",
     "pageNumber": 50,
-    "description": "2026년부터 단계적*으로 지방정부가 필요한 물품을 자율적으로 구매할 수 있게 됩니다.",
+    "description": "지자체 조달청 의무구매 자율화",
     "ageGroups": [
       "all"
     ],
@@ -839,7 +835,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "금융위원회",
     "pageNumber": 51,
-    "description": "청년 대상 자산형성 지원효과를 대폭 강화한 청년미래적금이 2026년 신설됩니다.",
+    "description": "청년 자산형성 지원 청년미래적금 신설",
     "ageGroups": [
       "youth"
     ],
@@ -859,7 +855,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "금융위원회",
     "pageNumber": 52,
-    "description": "상장사 영문공시 의무 대상법인 등이 확대됩니다.",
+    "description": "상장사 영문공시 의무 단계적 확대",
     "ageGroups": [
       "all"
     ],
@@ -878,7 +874,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "금융위원회",
     "pageNumber": 53,
-    "description": "2026년 1월 1일부터 상호금융권도 중도상환 수수료가 인하됩니다.",
+    "description": "상호금융권 중도상환수수료 인하",
     "ageGroups": [
       "all"
     ],
@@ -898,7 +894,7 @@ export const policies_finance: Policy[] = [
     "category": "finance",
     "department": "원자력안전위원회",
     "pageNumber": 54,
-    "description": "매년 업무량에 따라 변동되던 원자력안전관리부담금(이하 ‘부담금’)의 산정기준을 정액제로",
+    "description": "원자력안전관리부담금 산정기준 개편",
     "ageGroups": [
       "all"
     ],

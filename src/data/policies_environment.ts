@@ -7,13 +7,14 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 149,
-    "description": "・ ・ 전기 수소차 보급을 위해 2026년부터 융자 펀드 등 금융지원 사업이 시행됩니다.",
+    "description": "전기·수소차 구매 시 금리우대 지원",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
       "금융",
+      "금리",
       "기후에너지환경부",
       "기타"
     ],
@@ -27,7 +28,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 150,
-    "description": "2026년부터 충전·주차 중 발생한 전기차 화재 사고 당 최대 100억원까지 보상합니다.",
+    "description": "전기차 화재 보험 보장한도 100억 확대",
     "ageGroups": [
       "all"
     ],
@@ -46,7 +47,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 151,
-    "description": "2026년 1월 1일부터 『유기성폐자원을 활용한 바이오가스의 생산 및 이용 촉진법』에 따라",
+    "description": "바이오가스 생산목표제 민간 의무화",
     "ageGroups": [
       "all"
     ],
@@ -65,7 +66,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 152,
-    "description": "체계적이고 질서 있는 해상풍력 보급을 위해 2026년 3월 26일부터 해상풍력 계획입지 제도가",
+    "description": "정부 주도 해상풍력 계획입지 도입",
     "ageGroups": [
       "all"
     ],
@@ -84,7 +85,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 153,
-    "description": "「환경기술 및 환경산업 지원법」개정(2025.",
+    "description": "그린워싱 방지 환경표지 기준 강화",
     "ageGroups": [
       "all"
     ],
@@ -104,7 +105,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 154,
-    "description": "그간 먹는샘물 용기에는 제품 정보를 표시하기 위해 개별 라벨을 부착했으나, 플라스틱 감량과",
+    "description": "먹는샘물 묶음포장 무라벨만 허용",
     "ageGroups": [
       "all"
     ],
@@ -123,7 +124,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 155,
-    "description": "「야생생물 보호 및 관리에 관한 법률」제34조의24에 따라 기존에 곰을 사육하던 농가들도",
+    "description": "곰 사육 금지 및 보호시설 이송",
     "ageGroups": [
       "all"
     ],
@@ -142,7 +143,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 156,
-    "description": "2026년 3월부터 기업 등 민간이 자연환경복원사업에 참여 후 그 참여실적을 인정받을 수 있고,",
+    "description": "자연환경복원업 신설 및 민간참여 확대",
     "ageGroups": [
       "all"
     ],
@@ -162,7 +163,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 157,
-    "description": "그간 ’대기총량허가‘와 ’통합허가‘ 각 창구에 별도 제출해야 했던 유사한 내용의 신청서류가",
+    "description": "대기총량허가 신청서류 통합환경관리계획서로 갈음",
     "ageGroups": [
       "all"
     ],
@@ -182,7 +183,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 158,
-    "description": "플라스틱 재생원료의 사용을 활성화 하기 위하여 재생원료 사용의무 제도가 시행됩니다.",
+    "description": "플라스틱 제품 재생원료 사용 의무화",
     "ageGroups": [
       "all"
     ],
@@ -201,7 +202,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 159,
-    "description": "그동안 일반 플라스틱으로 분류되거나 종량제 봉투에 버려졌던 플라스틱 완구류를",
+    "description": "장난감도 재활용 의무 대상 포함",
     "ageGroups": [
       "all"
     ],
@@ -220,7 +221,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 160,
-    "description": "그간 많이 발생되는 폐기물의 유형*을 반영하여 전지류 폐기물의 분류체계를 개선합니다.",
+    "description": "폐전지류 별도 배출체계 개선",
     "ageGroups": [
       "all"
     ],
@@ -239,7 +240,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 161,
-    "description": "의류건조기, 보조배터리 등 가정에서 사용되는 모든 전기·전자제품이",
+    "description": "모든 전기·전자제품 재활용 의무화",
     "ageGroups": [
       "all"
     ],
@@ -258,7 +259,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기후에너지환경부",
     "pageNumber": 162,
-    "description": "도서관 등 일부 다중이용시설의 실내 초미세먼지 유지기준을 강화한 「실내공기질",
+    "description": "다중이용시설 실내 초미세먼지 기준 강화",
     "ageGroups": [
       "all"
     ],
@@ -300,13 +301,12 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기상청",
     "pageNumber": 164,
-    "description": "기후변화에 따른 폭염의 장기화·정례화에 따라, 국민 안전 확보를 위해 기존의 특보와",
+    "description": "폭염 중대경보·열대야 주의보 신설",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "기상청",
       "기타"
     ],
@@ -320,7 +320,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기상청",
     "pageNumber": 165,
-    "description": "기존 방재역량을 뛰어넘는 가칭재난성호우(예, 시간당 100mm 강수 등) 대응을 위해 현행 호우",
+    "description": "극한호우 시 긴급재난문자 발송",
     "ageGroups": [
       "all"
     ],
@@ -339,7 +339,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기상청",
     "pageNumber": 166,
-    "description": "현재 지진조기경보는 지진 관측 후 통보까지 5~10초가 소요되는데, 지진 발생(진앙) 인근",
+    "description": "지진조기경보 통보시간 5초 단축",
     "ageGroups": [
       "all"
     ],
@@ -358,7 +358,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기상청",
     "pageNumber": 167,
-    "description": "기상·지형·사회·경제적 특성을 고려, 위험기상 발생지역으로 방재역량 집중을 위해 지자체의",
+    "description": "세종·서해 도서·수도권 중심 특보구역 세분화",
     "ageGroups": [
       "all"
     ],
@@ -377,7 +377,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기상청",
     "pageNumber": 168,
-    "description": "단·중·장기 가뭄 상황에 빈틈없이 대응하기 위해 최근 강수량 상황과 폭염 등을 반영한 ‘통합",
+    "description": "통합 기상가뭄 정보 제공",
     "ageGroups": [
       "all"
     ],
@@ -396,7 +396,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기상청",
     "pageNumber": 169,
-    "description": "기후위기 시대, 흔들림 없는 산업경쟁력 확보를 위해 재생에너지 분야 기상서비스를",
+    "description": "실증지역 중심 재생에너지 기상서비스 제공",
     "ageGroups": [
       "all"
     ],
@@ -416,7 +416,7 @@ export const policies_environment: Policy[] = [
     "category": "environment",
     "department": "기상청",
     "pageNumber": 170,
-    "description": "그동안 누리집과 모바일 웹으로만 제공하던 헬기 등 저고도 항공기 맞춤형 기상정보를 모바일에",
+    "description": "저고도항공 전용 날씨앱(LAMIS-A) 신규 서비스",
     "ageGroups": [
       "all"
     ],

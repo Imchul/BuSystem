@@ -7,7 +7,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 197,
-    "description": "2026년부터 대중교통 고빈도 이용자는 환급 기준금액을 초과하여 대중교통비를 지출한 경우",
+    "description": "대중교통 통합 결제 '모두의 카드' 도입",
     "ageGroups": [
       "all"
     ],
@@ -33,7 +33,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 198,
-    "description": "그간 공공분야의 국토 관리, 공간정보 구축 및 재난 대응 등에 위성을 활용하기 위해 고해상도",
+    "description": "국내 최초 공공 서비스 전용 국토위성 2호 발사·운영",
     "ageGroups": [
       "all"
     ],
@@ -52,7 +52,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 199,
-    "description": "그간 긴급한 주거지원이 필요한 범죄피해자 및 가정폭력피해자도 소득·자산 기준을 충족하여야",
+    "description": "범죄피해자 등 주거상향 시",
     "ageGroups": [
       "all"
     ],
@@ -72,7 +72,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 200,
-    "description": "소화물배송대행서비스 인증사업자*(배달플랫폼)가 배달 종사자의 유상운송보험 가입 및",
+    "description": "배달 라이더 유상운송보험 의무화",
     "ageGroups": [
       "all"
     ],
@@ -94,7 +94,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 201,
-    "description": "항공사고 피해자의 원활한 피해 복구 및 일상으로의 안정적인 복귀를 보장하기 위하여 관련",
+    "description": "항공사고 피해자 보호 확대를 위한 항공보험 제도개선",
     "ageGroups": [
       "all"
     ],
@@ -113,7 +113,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 202,
-    "description": "보다 안전한 하늘길을 안내하기 위해 항공교통관제사를 대상으로 전문항공교통관제사",
+    "description": "항공안전 강화를 위한 ‘전문항공교통관제사 제도’ 도입",
     "ageGroups": [
       "all"
     ],
@@ -134,7 +134,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 203,
-    "description": "2025년 12월 18일부터 인천대교 통행료가 대폭 인하됩니다.",
+    "description": "인천대교 통행료 5,500원으로 인하",
     "ageGroups": [
       "all"
     ],
@@ -153,7 +153,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 204,
-    "description": "그간 지역명(예: 서울 관악)이 표기되었던 이륜자동차 번호판이 2026년 3월 20일부터는",
+    "description": "오토바이 전국 번호판 도입",
     "ageGroups": [
       "all"
     ],
@@ -172,7 +172,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "국토교통부",
     "pageNumber": 205,
-    "description": "그간 과적에 적발된 경우 중량 허위 기재 등을 하는 화주, 운송사업자 등과 같은 실질 위반책임자가",
+    "description": "과적적발 차량 위반책임자 확인 절차 강화",
     "ageGroups": [
       "all"
     ],
@@ -191,7 +191,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "해양수산부",
     "pageNumber": 206,
-    "description": "연안여객선 모바일 앱을 통한 예매 시, 각종 페이(pay) 등 간편 결제 서비스 및 푸시",
+    "description": "연안여객선 모바일 예매 앱 개선",
     "ageGroups": [
       "all"
     ],
@@ -210,7 +210,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "해양수산부",
     "pageNumber": 207,
-    "description": "기존 수기로 처리하던 도선수습생 및 도선사 시험 접수와 응시생 정보 관리를 2025년 10월부터",
+    "description": "도선수습생 및 도선사 시험 온라인 접수 실시",
     "ageGroups": [
       "all"
     ],
@@ -235,13 +235,12 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "해양수산부",
     "pageNumber": 208,
-    "description": "제3차 연안정비 기본계획(변경)(2025∼2029)을 통해 기후변화에 준비된 안전하고 지속 가능한",
+    "description": "제3차 연안정비 기본계획(변경)(2025~2029) 시행",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "해양수산부",
       "기타"
     ],
@@ -255,13 +254,12 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "해양수산부",
     "pageNumber": 209,
-    "description": "파도의 에너지를 분산시켜 항만·어항 시설물을 보호하는 소파블록*이 파손이 되면 그동안",
+    "description": "소파블록(테트라포드 등) 재활용 규모 확대",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "에너지",
       "해양수산부",
       "기타"
     ],
@@ -275,7 +273,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "해양수산부",
     "pageNumber": 210,
-    "description": "그간 부동산 경기 침체 등으로 부지분양 및 상부시설 건축이 저조한 부산항 북항 1단계 재개발",
+    "description": "공공이 선도하는 부산항 북항 재개발구역 활성화",
     "ageGroups": [
       "all"
     ],
@@ -294,7 +292,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "경찰청",
     "pageNumber": 211,
-    "description": "운전면허증 갱신 기간이 변경됩니다.",
+    "description": "운전면허 갱신주기 10년으로 통일",
     "ageGroups": [
       "all"
     ],
@@ -313,7 +311,7 @@ export const policies_transport: Policy[] = [
     "category": "transport",
     "department": "경찰청",
     "pageNumber": 212,
-    "description": "음주운전처럼 행위의 위험성과 사회적 비난 가능성이 큰 약물운전을 예방하기 위해 약물투약",
+    "description": "약물운전 의심 시 타액검사 의무화",
     "ageGroups": [
       "all"
     ],

@@ -7,9 +7,9 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "교육부",
     "pageNumber": 60,
-    "description": "2026년부터 유치원·어린이집 이용 유아에 대한 무상교육·보육비 지원대상이 4~5세로",
+    "description": "유아 무상교육 대상 4세까지 확대",
     "ageGroups": [
-      "infant"
+      "all"
     ],
     "gender": "all",
     "keywords": [
@@ -28,7 +28,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "교육부",
     "pageNumber": 61,
-    "description": "학생맞춤통합지원은 학생의 학습참여를 어렵게 하는 다양한 어려움*을",
+    "description": "위기학생 맞춤형 통합지원 전면 시행",
     "ageGroups": [
       "child"
     ],
@@ -47,9 +47,9 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "교육부",
     "pageNumber": 62,
-    "description": "취업 후 상환 학자금대출(ICL)은 재학 중 상환 부담 없이 학업에 전념하고, 학생들이",
+    "description": "취업 후 상환 학자금대출 대상 확대",
     "ageGroups": [
-      "child"
+      "all"
     ],
     "gender": "all",
     "keywords": [
@@ -67,7 +67,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "교육부",
     "pageNumber": 63,
-    "description": "2026학년도부터 방과후학교 참여를 희망하는 초3학생에게는 ‘방과후 프로그램 이용권*",
+    "description": "방과후학교 지원 및 늘봄학교 확대",
     "ageGroups": [
       "child"
     ],
@@ -86,7 +86,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "성평등가족부",
     "pageNumber": 64,
-    "description": "맞벌이 등으로 아이를 돌보기 어려운 가정에 찾아가 돌봄을 제공하는 아이돌봄서비스의 정부",
+    "description": "아이돌봄서비스 정부 지원 확대",
     "ageGroups": [
       "all"
     ],
@@ -105,7 +105,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "성평등가족부",
     "pageNumber": 65,
-    "description": "한부모가족 아동양육비 등 복지 지원 대상이 확대되고, 지원 금액도 인상됩니다.",
+    "description": "한부모가족 아동양육비 지원 확대",
     "ageGroups": [
       "child"
     ],
@@ -126,7 +126,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "성평등가족부",
     "pageNumber": 66,
-    "description": "2026년부터 청년세대의 관점을 반영한 성별 불균형 사례 및 정책 아이디어를 발굴하고, 성별",
+    "description": "청년 성별균형 문화확산 사업 추진",
     "ageGroups": [
       "youth"
     ],
@@ -146,7 +146,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "성평등가족부",
     "pageNumber": 67,
-    "description": "진화하는 디지털성범죄 대응을 위해 디지털성범죄 피해 지원 시스템이 고도화되는 등 피해",
+    "description": "디지털성범죄 피해자 잊혀질 권리 지원",
     "ageGroups": [
       "all"
     ],
@@ -166,7 +166,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "성평등가족부",
     "pageNumber": 68,
-    "description": "성착취 피해를 입은 아동·청소년이 성매매 피해자 지원시설을 퇴소한 후에도 안정적으로 자립",
+    "description": "성착취 피해 청소년 자립수당 신설",
     "ageGroups": [
       "child",
       "youth"
@@ -186,7 +186,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "성평등가족부",
     "pageNumber": 69,
-    "description": "저소득 한부모가족 대상 자립·주거·법률 지원이 강화됩니다.",
+    "description": "저소득 한부모 자립·주거 지원 강화",
     "ageGroups": [
       "all"
     ],
@@ -207,13 +207,12 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "성평등가족부",
     "pageNumber": 70,
-    "description": "청소년복지시설(쉼터, 자립지원관, 회복지원시설)을 퇴소한 가정 밖 청소년의 안정적인 자립기반",
+    "description": "가정 밖 청소년 주거지원 강화",
     "ageGroups": [
       "youth"
     ],
     "gender": "all",
     "keywords": [
-      "복지",
       "주거",
       "성평등가족부",
       "기타"
@@ -228,7 +227,7 @@ export const policies_education: Policy[] = [
     "category": "education",
     "department": "재외동포청",
     "pageNumber": 71,
-    "description": "모국에 귀환한 동포 청년 인재들이 우리 사회에 성공적으로 안착하여 대한민국의 발전에",
+    "description": "재외동포청년 인재 유치·정착지원 사업 시행",
     "ageGroups": [
       "youth"
     ],

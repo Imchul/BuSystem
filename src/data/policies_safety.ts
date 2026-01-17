@@ -7,7 +7,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "과학기술정보통신부",
     "pageNumber": 298,
-    "description": "일부 형식적으로 운영되었던 주요 부가통신서비스*의 이용자 요구사항 처리시스템이 2월부터",
+    "description": "부가통신분야 이용자 요구사항 처리시스템 운영 개선",
     "ageGroups": [
       "all"
     ],
@@ -26,7 +26,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "과학기술정보통신부",
     "pageNumber": 299,
-    "description": "AI산업 발전을 지원하고, 안전하고 신뢰할 수 있는 AI 기반 조성을 위한 「AI기본법」이 2026년",
+    "description": "AI산업 발전과 안전·신뢰 기반 조성을 위한 AI기본법 시행",
     "ageGroups": [
       "all"
     ],
@@ -46,7 +46,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 300,
-    "description": "압류금지 생계비의 실효적 보장을 위해 해당 계좌의 예금 전액에 대한 압류가 금지되는",
+    "description": "생계비계좌 제도 시행 및 압류금지 금액 상향",
     "ageGroups": [
       "all"
     ],
@@ -65,7 +65,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 302,
-    "description": "이제 정부와 공공기관, 민간 단체 등 35개 기관*에서 다양하게 제공하는 법률구조 서비스와",
+    "description": "법률구조 통합시스템 대국민 서비스 개시",
     "ageGroups": [
       "all"
     ],
@@ -90,7 +90,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 304,
-    "description": "「상가건물 임대차보호법」(2025.",
+    "description": "상가건물 깜깜이 관리비 막는 관리비 내역 요청권 신설",
     "ageGroups": [
       "all"
     ],
@@ -109,7 +109,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 305,
-    "description": "부양의무를 중대하게 위반한 부모가 자녀의 재산을 상속받지 못하도록 상속권 상실선고 제도를",
+    "description": "상속권 상실선고 제도 시행",
     "ageGroups": [
       "all"
     ],
@@ -128,7 +128,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 306,
-    "description": "법무부는 해외 과학기술 인재가 보다 쉽게 유입될 수 있고, 국가 재정으로 육성한 고급인재가",
+    "description": "과학기술 우수인재 정착을 위한 K-STAR 비자트랙 신설",
     "ageGroups": [
       "all"
     ],
@@ -147,7 +147,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 308,
-    "description": "법무부는 2020년 9월 25일부로 시행된 외국인 취업정보 신고와 관련, 국내 체류 외국인이",
+    "description": "‘외국인 취업정보 온라인 신고’ 확대 시행",
     "ageGroups": [
       "all"
     ],
@@ -166,7 +166,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 309,
-    "description": "그간 교정시실을 직접 방문하여 변호인접견을 실시하였지만, 변호인 스마트접견을 도입하여",
+    "description": "변호인 스마트접견 도입 및 시범 운영",
     "ageGroups": [
       "all"
     ],
@@ -185,7 +185,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 310,
-    "description": "강력범죄피해자와 그 가족·보호자를 대상으로 심리치유·임시거처 등을 제공함으로써",
+    "description": "365 스마일 운영",
     "ageGroups": [
       "all"
     ],
@@ -204,7 +204,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 311,
-    "description": "개정된 「범죄피해자 보호법 시행령」에 따라 범죄피해구조금이 확대됩니다.",
+    "description": "범죄피해자 구조금 확대",
     "ageGroups": [
       "all"
     ],
@@ -223,7 +223,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "법무부",
     "pageNumber": 312,
-    "description": "2026년 1월부터 범죄피해자 일상 회복을 위한 긴급 생활안정비를 신설하였습니다.",
+    "description": "범죄피해자 긴급 생활안정비 신설",
     "ageGroups": [
       "all"
     ],
@@ -242,7 +242,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "행정안전부",
     "pageNumber": 313,
-    "description": "적의 공격에 따른 공습 상황이나 지진해일 상황에서만 울렸던 민방위 경보 사이렌이 태풍, 홍수,",
+    "description": "호우, 산불 등 긴급 대피 필요 시 재난 경보 사이렌 확대 운영",
     "ageGroups": [
       "all"
     ],
@@ -261,7 +261,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "행정안전부",
     "pageNumber": 314,
-    "description": "개인 상황 변화에 맞춰 받을 수 있는 공공서비스를 알려주는 ’혜택알리미‘ 서비스가 2026년부터",
+    "description": "공공서비스 맞춤 알림서비스(혜택알리미) 확대",
     "ageGroups": [
       "all"
     ],
@@ -280,13 +280,12 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "행정안전부",
     "pageNumber": 315,
-    "description": "재난 피해자들의 조기 생활안정을 위한「재난 및 안전관리 기본법」개정(2025.",
+    "description": "재난 피해지원 대상 및 범위 확대",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "행정안전부",
       "기타"
     ],
@@ -300,7 +299,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "행정안전부",
     "pageNumber": 316,
-    "description": "최근 기후변화로 인한 극한 호우 등에 대비하기 위하여 지자체별로 재해예방을 위해 설정하는",
+    "description": "기후변화를 고려한 방재성능목표 설정기준 개선",
     "ageGroups": [
       "all"
     ],
@@ -319,7 +318,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "행정안전부",
     "pageNumber": 317,
-    "description": "그간 다양한 창구를 통한 재난·안전 정보 제공으로 이용이 불편하였던 재난안전정보를",
+    "description": "사용자 중심의 재난·안전정보 통합 제공",
     "ageGroups": [
       "all"
     ],
@@ -339,7 +338,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "성평등가족부",
     "pageNumber": 318,
-    "description": "스토킹·교제폭력 피해 대응을 위한 맞춤형 통합지원 등 피해자 지원이 확대됩니다.",
+    "description": "스토킹·교제폭력 피해자 지원 강화",
     "ageGroups": [
       "all"
     ],
@@ -379,7 +378,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "해양수산부",
     "pageNumber": 320,
-    "description": "2025년 4월 22일 「수중레저법 일부개정법률」공포와 관련, 2026년 4월 23일부터",
+    "description": "수중레저활동 안전관리 및 수중레저업 등록 해경청 이관",
     "ageGroups": [
       "all"
     ],
@@ -399,13 +398,12 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "해양수산부",
     "pageNumber": 321,
-    "description": "그간 해양안전종합정보시스템* 누리집을 통해 계정담당자만 확인할 수 있었던",
+    "description": "선박보안경보장치 점검 결과정보 접근성 향상",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "해양수산부",
       "기타"
     ],
@@ -419,7 +417,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "해양수산부",
     "pageNumber": 322,
-    "description": "2025년 7월 26일 도입된 「해운분야 안전투자 공시제도」에 따라 해운선사의 안전투자",
+    "description": "해운분야 안전투자 최초 공시",
     "ageGroups": [
       "all"
     ],
@@ -439,7 +437,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "해양수산부",
     "pageNumber": 323,
-    "description": "선박 내 전기차 화재에 대비하여 ‘전기차 화재 대응장비 보급사업’ 대상을 기존 연안여객선에서",
+    "description": "카페리선 전기차 화재 대응장비 보급 확대",
     "ageGroups": [
       "all"
     ],
@@ -458,13 +456,12 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "해양수산부",
     "pageNumber": 324,
-    "description": "선박으로 운송하는 전기자동차 화재 시 안전확보를 위해 카페리 여객선 등 선박에 전용",
+    "description": "카페리 여객선, 전기자동차 화재대응설비 비치 의무화",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "해양수산부",
       "기타"
     ],
@@ -478,13 +475,12 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "소방청",
     "pageNumber": 325,
-    "description": "숙박시설의 스프링클러 설치 여부와 점검 결과를 공개하여 국민이 안전한 숙박시설을 선택할 수",
+    "description": "숙박시설 스프링클러 설치여부 공개",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "소방청",
       "기타"
     ],
@@ -498,7 +494,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "소방청",
     "pageNumber": 326,
-    "description": "소방청 생활안전과",
+    "description": "노후아파트 화재안전 시설 지원",
     "ageGroups": [
       "all"
     ],
@@ -518,7 +514,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "소방청",
     "pageNumber": 327,
-    "description": "그간 전화, 메일, 누리집, 카카오톡을 통해 이루어지던 재외국민 119응급의료상담서비스가",
+    "description": "해외에서도 카톡으로 119 의료상담",
     "ageGroups": [
       "all"
     ],
@@ -538,7 +534,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "산림청",
     "pageNumber": 328,
-    "description": "2월부터 산림 및 산림과 잇닿은 토지의 건축행위에 대해서 산림재난 위험성 사전 검토 제도가",
+    "description": "산림과 잇닿은 토지 건축에 대한 산림재난 위험성 검토",
     "ageGroups": [
       "all"
     ],
@@ -557,7 +553,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "해양경찰청",
     "pageNumber": 329,
-    "description": "(약칭)「수중레저법」 개정법률 시행에 따라 2026년 4월 23일부터 해양경찰청에서 안전관리규정",
+    "description": "해양경찰청, 수중레저 안전관리 시행",
     "ageGroups": [
       "all"
     ],
@@ -577,7 +573,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "방송미디어통신위원회",
     "pageNumber": 331,
-    "description": "마약, 도박 등 민생과 직결된 불법정보에 대해서는 방송미디어통신심의위원회(이하 ’방미심위‘)",
+    "description": "마약, 도박 등 불법정보 신속차단을 위한 제도 개선",
     "ageGroups": [
       "all"
     ],
@@ -596,7 +592,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "원자력안전위원회",
     "pageNumber": 332,
-    "description": "최신 과학기술 및 국내 규제경험을 반영하여 재정비된 원자로시설 위치관련 기준*이 2026년",
+    "description": "원자로시설 위치관련 한국형 기준 정립",
     "ageGroups": [
       "all"
     ],
@@ -615,7 +611,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "원자력안전위원회",
     "pageNumber": 333,
-    "description": "그간 통제·관리 가능한 동일부지 경계 안에서 발전소 간 사용후핵연료 운반할 경우, 일괄적으로",
+    "description": "사용후핵연료가 보다 안전하게 운반될 수 있도록 개선",
     "ageGroups": [
       "all"
     ],
@@ -652,7 +648,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "과학기술정보통신부 연구산업진흥과",
     "pageNumber": 176,
-    "description": "「기업부설연구소등의 연구개발 지원에 관한 법률」(2025.",
+    "description": "기업부설연구소 등 육성",
     "ageGroups": [
       "all"
     ],
@@ -709,13 +705,12 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "인권구조과",
     "pageNumber": 318,
-    "description": "|스토킹 교제폭력<br>피해자 지원 강화|● \u0007스토킹·교제폭력<br>피해자 긴급주거지원 및<br>치료회복프로그램 분절 운영<br>· \u0007긴급주거지원 및<br>치료회복프로그램을 별도<br>기관에서 운영|● \u0007스토킹·교제폭력<br>피해자 긴급주거지원 및<br>치료회복프로그램 통합 운영<br>· \u0007피해자 상담·주거지원·치료회복 등<br>맞춤형 통합 지원 서비...",
+    "description": "스토킹 교제폭력 피해자 지원 강화",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "주거",
       "인권구조과",
       "기타"
     ],
@@ -729,7 +724,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "",
     "pageNumber": 163,
-    "description": "바다 표면적의 2/3을 차지하는 공해와 심해저 등 국가관할권 이원지역의 해양생물다양성 보호를",
+    "description": "BBNJ 협정 발효 (해양생물다양성 보호)",
     "ageGroups": [
       "all"
     ],
@@ -746,7 +741,7 @@ export const policies_safety: Policy[] = [
     "category": "safety",
     "department": "기상청 기상융합서비스과",
     "pageNumber": 179,
-    "description": "기후위기 시대, 흔들림 없는 산업경쟁력 확보를 위해 재생에너지 분야 기상서비스를",
+    "description": "실증지역 중심 재생에너지 기상서비스 제공",
     "ageGroups": [
       "all"
     ],

@@ -4,6 +4,8 @@ import path from 'path';
 // --- Configuration ---
 const INPUT_FILE = 'policy.md';
 const OUT_DIR = 'src/data';
+import { POLICY_SUMMARIES } from './src/data/policy_summaries.js';
+
 
 const categoryMap = {
     '01': 'finance',
@@ -341,13 +343,27 @@ function parse() {
             // Filter out contact info lines or boilerplate
             const cleanParas = paragraphs.filter(p => !p.includes('☎') && !p.includes('www') && p.trim().length > 10);
 
-            if (cleanParas.length > 0) {
+            // Description Logic:
+            // 1. Check Manual Summary
+            // 2. Fallback to Content Extraction (Strict)
+            // 3. Fallback to Title
+
+            if (POLICY_SUMMARIES[item.title]) {
+                item.description = POLICY_SUMMARIES[item.title];
+            } else if (cleanParas.length > 0) {
                 // Use smart extraction for description
-                item.description = extractFirstSentence(cleanParas[0]);
-                // Truncate if still too long (fallback)
-                if (item.description.length > 200) item.description = item.description.substring(0, 197) + '...';
+                const extracted = extractFirstSentence(cleanParas[0]);
+                if (extracted.length > 35 || extracted.length < 5) {
+                    // If extracted text is too long or weird, use Title (cleaned)
+                    // or try to summarize the extracted text further?
+                    // Let's use Title as safe fallback if manual summary missing and extraction is verbose.
+                    // But typically Title IS the summary.
+                    item.description = item.title;
+                } else {
+                    item.description = extracted;
+                }
             } else {
-                item.description = item.title + "에 대한 상세 내용입니다.";
+                item.description = item.title;
             }
 
 
@@ -464,10 +480,20 @@ function extractFirstSentence(text) {
     if (!text) return '';
     // Remove markdown symbols and common prefixes
     let clean = text.replace(/\*\*/g, '').replace(/\[.*?\]/g, '').replace(/^\s*[-•□]\s*/, '').replace(/\n/g, ' ').trim();
+
+    // Aggressive cleaning for "Summary" style
+    clean = clean.replace(/^2026년부터\s*/, '');
+    clean = clean.replace(/^(정부는|이번|이에)\s*/, '');
+    clean = clean.replace(/\(.*\)/g, ''); // Remove parenthesis
+
     // Split by ending punctuation (., ?, !) followed by space or end of string
-    // But be careful not to split inside quotes.
     const match = clean.match(/^.*?[.?!](\s|$)/);
-    return match ? match[0].trim() : clean;
+    let sentence = match ? match[0].trim() : clean;
+
+    // Remove polite endings for brevity: ~합니다 -> ~함
+    sentence = sentence.replace(/합니다\.$/, '함').replace(/됩니다\.$/, '됨').replace(/입니다\.$/, '임').replace(/할 예정입니다\.$/, ' 예정');
+
+    return sentence;
 }
 
 function cleanContent(lines, contactInfo, department) {

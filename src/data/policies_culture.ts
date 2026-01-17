@@ -7,7 +7,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "외교부",
     "pageNumber": 133,
-    "description": "2021년 차세대 전자여권 도입으로 제조비용이 상승하였으나 여권발급수수료는 지난 20년간",
+    "description": "국제교류기여금 인상으로 여권료 인상",
     "ageGroups": [
       "all"
     ],
@@ -26,7 +26,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "문화체육관광부",
     "pageNumber": 134,
-    "description": "어르신들께서 원하는 체육활동을 거주지 인근에서 즐기실 수 있도록 스포츠강좌를 제공하는",
+    "description": "어르신 맞춤형 스포츠 강좌 신설",
     "ageGroups": [
       "senior"
     ],
@@ -45,7 +45,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "문화체육관광부",
     "pageNumber": 135,
-    "description": "내년부터 인구감소지역의 생활인구 확충과 지역관광 활성화를 위해 농어촌 인구감소지역*을",
+    "description": "인구감소지역 방문 시 여행경비 지원",
     "ageGroups": [
       "all"
     ],
@@ -64,7 +64,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "문화체육관광부",
     "pageNumber": 136,
-    "description": "학교체육시설이 지역 주민에게 개방될 경우 시설 이용 중 발생 사고에 대한 민사책임 면책",
+    "description": "학교체육시설 주민 개방 인센티브",
     "ageGroups": [
       "all"
     ],
@@ -83,7 +83,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "문화체육관광부",
     "pageNumber": 137,
-    "description": "|아동·장애인·<br>노인학대관련<br>범죄자<br>체육지도자<br>자격 취득 제한<br>강화|● \u0007다음 어느 하나에 해당하는 죄를<br>저지른 사람으로서 금고 이상의<br>형 또는 치료감호를 선고받고<br>그 집행이 종료되거나 집행이<br>유예ㆍ면제된 날부터 20년이<br>지나지 아니하거나 벌금형이<br>확정된 날부터 10년이 지나지<br>아니한 사...",
+    "description": "학대 전과자 체육지도자 자격 제한",
     "ageGroups": [
       "child",
       "senior"
@@ -104,7 +104,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "문화체육관광부",
     "pageNumber": 138,
-    "description": "약물투약 의심 운전자 검사 의무화 규정 마련 경찰청 212",
+    "description": "웰니스 관광산업 육성법 본격 시행",
     "ageGroups": [
       "all"
     ],
@@ -122,7 +122,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "문화체육관광부",
     "pageNumber": 139,
-    "description": "그간 자유업이던 미술 서비스업 6개 업종*이 7월부터 제도권 내에 편입됩니다.",
+    "description": "미술서비스업(전시·대여) 신고제 시행",
     "ageGroups": [
       "all"
     ],
@@ -141,7 +141,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "문화체육관광부",
     "pageNumber": 140,
-    "description": "|통합문화이용권<br>1인당 지원금이<br>연간 15만원<br>(7.1% 증)으로<br>인상|● \u0007통합문화이용권 가맹점 수<br>· \u0007전국의 3만 2천여개의 온·오프라인<br>가맹점<br> <br>● \u0007통합문화이용권 발급기간<br>· \u0007(발급기간) 2025년 2월 3일(월) ~<br>2025년 11월 28일(금)|● \u0007통합문화이용권 가맹점 수<br>·...",
+    "description": "통합문화이용권 1인당 지원금이 연간 15만원",
     "ageGroups": [
       "all"
     ],
@@ -160,7 +160,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "해양수산부",
     "pageNumber": 141,
-    "description": "아름다운 등대 홍보 및 해양 관광·문화 체험 활성화를 위해 진행 중인 등대스탬프투어 대상",
+    "description": "등대스탬프 투어 코스 확대",
     "ageGroups": [
       "all"
     ],
@@ -179,7 +179,7 @@ export const policies_culture: Policy[] = [
     "category": "culture",
     "department": "국가유산청",
     "pageNumber": 142,
-    "description": "국가유산 수리 과정에서 발생하는 손해에 대한 책임 범위가 설계·감리 분야까지 확대되고,",
+    "description": "국가유산수리 손해배상보험 가입 의무화",
     "ageGroups": [
       "all"
     ],

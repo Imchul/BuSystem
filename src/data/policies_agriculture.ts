@@ -7,7 +7,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 218,
-    "description": "지역경제 활성화 및 공동체 복원 등 농어촌 소멸 대응을 위해 인구감소지역 10개 군* 거주자를",
+    "description": "농어촌 기본소득 시범사업 도입",
     "ageGroups": [
       "all"
     ],
@@ -26,7 +26,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 219,
-    "description": "논(쌀 제외 타작물)·밭의 규모화, 농업 경영주체를 조직화하고 법인 중심의 공동영농을",
+    "description": "‘공동영농확산지원사업’ 시행",
     "ageGroups": [
       "all"
     ],
@@ -63,7 +63,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 221,
-    "description": "내년 1월 1일부터 동물병원 진료비에 부과되는 부가가치세가 더 많이 면제되도록 진료 항목을",
+    "description": "반려동물 진료비 부가세 면제 100개로 확대",
     "ageGroups": [
       "all"
     ],
@@ -83,7 +83,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 222,
-    "description": "‘양곡관리법 일부개정법률안’ 시행을 통해 정부가 쌀 수급균형 면적과 논 타작물 목표 면적을",
+    "description": "양곡관리법 개정으로 선제적 쌀 수급 정책 제도화",
     "ageGroups": [
       "all"
     ],
@@ -102,7 +102,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 223,
-    "description": "취약계층의 식품 접근성 강화를 위해 국산 신선농산물 구매를 지원하는 농식품 바우처 지원",
+    "description": "농식품 바우처, 청년 가구까지 지원 확대",
     "ageGroups": [
       "youth"
     ],
@@ -121,7 +121,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 224,
-    "description": "농림축산식품부 원예경영과",
+    "description": "어린이 과일간식 지원사업 재개",
     "ageGroups": [
       "infant"
     ],
@@ -163,7 +163,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 226,
-    "description": "농어촌지역 방치 쓰레기 문제 대응을 위해 인구감소지역 84개 농어촌 시·군 등을 대상으로",
+    "description": "농어촌 쓰레기 수거지원 사업 도입",
     "ageGroups": [
       "all"
     ],
@@ -182,13 +182,12 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 227,
-    "description": "농업인의 노후 안전망 강화를 위해 농업인의 국민연금 보험료 월 최대 지원금액이 인상됩니다.",
+    "description": "농업인 연금보험료 지원금액 인상",
     "ageGroups": [
       "senior"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "지원금",
       "농림축산식품부",
       "기타"
@@ -203,7 +202,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 228,
-    "description": "고령주민, 1인 가구가 증가하는 농촌 상황을 고려하여 농촌 왕진버스가 제공하는 의료서비스의",
+    "description": "찾아가는 농촌 왕진버스 운행 확대",
     "ageGroups": [
       "all"
     ],
@@ -224,7 +223,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 229,
-    "description": "여성농업인의 농작업 질환예방을 위한 여성농업인 특수건강검진의 대상",
+    "description": "여성농업인 특수건강검진 대상 연령 및 인원 확대",
     "ageGroups": [
       "all"
     ],
@@ -244,13 +243,12 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 230,
-    "description": "안전사고·범죄발생 우려, 위생·경관상 유해 등 빈집문제 해결을 위해 농촌 빈집 정비 지원을",
+    "description": "농촌 정주여건 개선을 위한 빈집 정비 지원 확대",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "안전",
       "농촌",
       "농림축산식품부",
       "기타"
@@ -265,7 +263,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 231,
-    "description": "외국인 계절근로자를 고용하는 농가 등 사용자는 그가 고용하는 계절근로자를 위하여 농업인",
+    "description": "외국인 계절근로자 인권보호를 위한 보증보험 등 도입",
     "ageGroups": [
       "all"
     ],
@@ -284,7 +282,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 232,
-    "description": "그간 시·군별 산정된 기본 보험료율에 가입자별 누적 손해율(1~5년)에 따른 할인·할증이",
+    "description": "농업인의 농어업 정책보험료 부담 완화",
     "ageGroups": [
       "all"
     ],
@@ -303,7 +301,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 233,
-    "description": "농업에 첨단기술을 융합한 스마트농업 생태계를 강화하기 위해 스마트농업 기술·기자재",
+    "description": "스마트농업 산업 육성 법적 기반 마련",
     "ageGroups": [
       "all"
     ],
@@ -322,7 +320,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 234,
-    "description": "푸드테크 산업 분야의 규제 신청을 농림축산식품부로 일원화합니다.",
+    "description": "푸드테크 산업 분야의 규제 신청을 농림축산식품부로 일원화함",
     "ageGroups": [
       "all"
     ],
@@ -341,13 +339,12 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 235,
-    "description": "2026년부터 통상 환경 변화에 전략적으로 대응하기 위해 권역별 K-푸드 진출 수준을 고려하여",
+    "description": "K-푸드 수출 유망 품목 발굴 지원 사업 신규 추진",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "환경",
       "농림축산식품부",
       "기타"
     ],
@@ -361,7 +358,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 236,
-    "description": "글로벌 K-푸드 열풍에 따른 방한 수요를 활용해 유행한식인 치킨을 중심으로 K-미식벨트를",
+    "description": "국내 관광 활성화를 위한 K-미식벨트(치킨벨트) 조성",
     "ageGroups": [
       "all"
     ],
@@ -380,7 +377,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 237,
-    "description": "2026년부터 기후변화에 대응하여 신선농산물의 수출 규격물량을 안정적으로 확보하기 위해",
+    "description": "스마트 수출전문단지 구축 신규 사업 추진",
     "ageGroups": [
       "all"
     ],
@@ -399,7 +396,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 238,
-    "description": "산업단지 관리기본계획 개정으로 2026년 상반기에는 국가식품클러스터에 식품소분업이",
+    "description": "국가식품클러스터 내 식품소분업 입주 허용",
     "ageGroups": [
       "all"
     ],
@@ -418,7 +415,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 239,
-    "description": "산업단지 관리기본계획 개정으로 2026년 상반기에는 국가식품클러스터에 펫푸드 제조업이",
+    "description": "국가식품클러스터 내 펫푸드 제조업 입주 허용",
     "ageGroups": [
       "all"
     ],
@@ -437,7 +434,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 240,
-    "description": "가금 축산계열화사업자의 가축 방역관리가 강화됩니다.",
+    "description": "가금 축산계열화사업자의 가축 방역관리가 강화됨",
     "ageGroups": [
       "all"
     ],
@@ -456,7 +453,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 241,
-    "description": "2030년까지 ‘돼지열병(CSF, Classical Swine Fever) 청정화’를 위하여 전국 양돈농가에 신형",
+    "description": "2030년까지 ‘돼지열병 청정화’를 위하여 전국 양돈농가에 신형",
     "ageGroups": [
       "all"
     ],
@@ -475,7 +472,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 242,
-    "description": "2026년부터 가축질병 관리(방역관리)가 우수한 농장에 방역관리 비용 일부를 지원합니다.",
+    "description": "가축질병 관리가 우수한 농장에 방역관리 비용 일부를 지원함",
     "ageGroups": [
       "all"
     ],
@@ -494,7 +491,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 243,
-    "description": "국가를 위해 봉사한 봉사동물의 은퇴 후 민간입양 활성화를 위해 입양자에게 돌봄비용",
+    "description": "은퇴 국가봉사동물 민간입양 지원사업 실시",
     "ageGroups": [
       "all"
     ],
@@ -513,7 +510,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 244,
-    "description": "2026년부터 전략작물직불 대상 품목이 확대되고 하계조사료, 옥수수, 깨의 직불금 단가가",
+    "description": "전략작물직불금 대상 품목 확대 및 직불금 단가 인상",
     "ageGroups": [
       "all"
     ],
@@ -532,14 +529,13 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 245,
-    "description": "축산법에 따른 의무교육 대상자의 스마트축산, 탄소중립 등 다양한 관심사와 요구를 반영하기",
+    "description": "축산종사자 교육 자율선택과목 확대·신설",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
       "교육",
-      "탄소",
       "농림축산식품부",
       "기타"
     ],
@@ -559,13 +555,12 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 246,
-    "description": "한우산업의 종합적·체계적 구축을 위한 법적 기반인「탄소중립에 따른 한우산업 전환 및 지원에",
+    "description": "한우산업의 종합적·체계적 구축을 위한 법적 기반 조성",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "탄소",
       "농림축산식품부",
       "기타"
     ],
@@ -579,7 +574,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 247,
-    "description": "특별재난지역 내 피해 축산농가의 조기 경영 정상화를 위해 축사시설현대화 사업을 통한 축사",
+    "description": "특별재난지역 내 피해축산농가 지원 확대",
     "ageGroups": [
       "all"
     ],
@@ -617,7 +612,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 249,
-    "description": "그간 주요 노지 채소류 중심으로 운영했던 채소가격안정제가 사과·배 등 과수까지",
+    "description": "채소가격안정제, ‘안정생산공급지원’ 사업으로 바뀝니다",
     "ageGroups": [
       "all"
     ],
@@ -636,7 +631,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 250,
-    "description": "농산물 수급불안에 대응하기 위해 마늘, 양파 대상으로 밭작물지정출하 시범사업을 운영하여",
+    "description": "마늘, 양파 대상 밭작물지정출하 시범사업 운영",
     "ageGroups": [
       "all"
     ],
@@ -655,7 +650,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 251,
-    "description": "생산성이 떨어지고 방역에 취약한 비닐하우스 형태의 오리 축사를 현대화된 6단 이하의",
+    "description": "오리 방역 강화 및 생산성 향상 시설개선 시범사업 도입",
     "ageGroups": [
       "all"
     ],
@@ -674,7 +669,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농림축산식품부",
     "pageNumber": 252,
-    "description": "스마트팜 전용 홍보 플랫폼 조성을 위해 ‘한국형 글로벌 스마트팜 수출지원센터 조성’ 사업을",
+    "description": "한국형 글로벌 스마트팜 수출지원센터 조성",
     "ageGroups": [
       "all"
     ],
@@ -693,7 +688,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 253,
-    "description": "부산 영도구 해양클러스터 내 조성 중인 해양과학기술 산학연 협력센터가 2026년 상반기부터",
+    "description": "부산 영도구 해양과학기술 산학연 협력센터 개소",
     "ageGroups": [
       "all"
     ],
@@ -712,7 +707,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 254,
-    "description": "그간 수산물 이력제 참여를 위해 유통사나 양식장에 요구하던 기준들을 대폭 완화합니다.",
+    "description": "수산물 이력제 참여 기준 완화",
     "ageGroups": [
       "all"
     ],
@@ -731,7 +726,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 255,
-    "description": "그간 초보-성장-고도화 등 수출실적이 있는 기업을 대상으로 지원하던 수산식품 수출바우처가",
+    "description": "수산물 수출바우처 지원대상 확대",
     "ageGroups": [
       "all"
     ],
@@ -750,7 +745,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 256,
-    "description": "어업인의 경제적 부담 경감을 위해 어업인 국민연금보험료의 지원 단가를 인상합니다.",
+    "description": "어업인 국민연금보험료 지원 단가 인상",
     "ageGroups": [
       "senior"
     ],
@@ -769,7 +764,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 257,
-    "description": "그간 원양어선에 승선할 수 있는 해기사는 내국인으로 제한되어 있었으나, 외국인 해기사 또한",
+    "description": "국내 원양어선에 외국인 해기사 승선 가능",
     "ageGroups": [
       "all"
     ],
@@ -788,7 +783,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 258,
-    "description": "2026년 1월부터 어업인이 직접 온라인에서 직불금 신청현황을 확인하고, 스스로",
+    "description": "수산공익직불제 대국민 포털 서비스 개시",
     "ageGroups": [
       "all"
     ],
@@ -807,13 +802,12 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 259,
-    "description": "그간 일괄적으로 부과·납부되던 수산자원조성금이 소상공인의 경제적 부담 완화 및 성장 지원을",
+    "description": "수산자원조성금 분할 납부 근거 마련",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "소상공인",
       "해양수산부",
       "기타"
     ],
@@ -827,7 +821,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "해양수산부",
     "pageNumber": 260,
-    "description": "그간 무단 방치 불법 어구가 명확함에도 소유자나 사용자를 알 수 없는 경우 지도·단속이 어렵고,",
+    "description": "폐어구 발생 예방을 위한 새로운 어구관리제도 실시",
     "ageGroups": [
       "all"
     ],
@@ -846,7 +840,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "식품의약품안전처",
     "pageNumber": 262,
-    "description": "내년부터 우리나라는 WHO와 함께 식품안전 비상대응 역량 강화를 위한 글로벌 협력 강화",
+    "description": "식품안전 비상대응 세계보건기구 협력센터 운영",
     "ageGroups": [
       "all"
     ],
@@ -866,7 +860,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "식품의약품안전처",
     "pageNumber": 263,
-    "description": "내년부터 김치, 고추장, 인삼제품, 식혜, 곶감 등 우리나라 전통식품의 국제 식품규격을",
+    "description": "CODEX 가공과채류분과위원회 의장국 선출",
     "ageGroups": [
       "all"
     ],
@@ -885,7 +879,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "식품의약품안전처",
     "pageNumber": 264,
-    "description": "2028년부터 시행 예정인 ’집단(위탁)급식소 위생등급제‘ 적용을 적극행정을 통해 2026년부터",
+    "description": "음식점 위생등급제를 집단급식소까지 적용 확대",
     "ageGroups": [
       "all"
     ],
@@ -904,7 +898,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "식품의약품안전처",
     "pageNumber": 265,
-    "description": "식습관 관리가 어려운 발달장애인의 특성을 고려하여, 촘촘한 영양 관리체계를 마련하여",
+    "description": "발달장애인 식생활 영양관리 및 정보 제공",
     "ageGroups": [
       "all"
     ],
@@ -924,7 +918,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "식품의약품안전처",
     "pageNumber": 266,
-    "description": "2026년부터 식품위해예측 업무를 전문적으로 수행할 식품위해예측센터를 지정·운영합니다.",
+    "description": "선제적 안전관리로 전환을 위한 식품위해예측센터 지정 운영",
     "ageGroups": [
       "all"
     ],
@@ -944,7 +938,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농촌진흥청",
     "pageNumber": 267,
-    "description": "천연식물보호제의 미생물농약 등록 시, 시험성적서 제출 면제 범위를 확대하는 등 등록 기준을",
+    "description": "시험성적서 면제범위 확대 등 천연식물보호제 등록기준 개선",
     "ageGroups": [
       "all"
     ],
@@ -963,7 +957,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농촌진흥청",
     "pageNumber": 268,
-    "description": "|농작업<br>안전관리자<br>확충으로<br>소규모 농사업장<br>안전 컨설팅 확대|● \u0007농작업 안전 컨설팅 도입<br>· \u0007농작업안전관리자 20시군44명,<br>6개월 컨설팅|● \u0007농작업 안전 컨설팅 확대<br>· \u0007농작업안전관리자 44시군 88명,<br>9개월 컨설팅<br>* \u00075인이상 고용 농업경영주 안전컨설팅<br>우선 지원하여 안전보건관리체계...",
+    "description": "농작업안전관리자 확충으로 소규모 농사업장 안전 컨설팅 확대",
     "ageGroups": [
       "all"
     ],
@@ -983,7 +977,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "농촌진흥청",
     "pageNumber": 269,
-    "description": "2025년 11월 대국민 시범 서비스를 시작한 농업기술 데이터 플랫폼(ADP)이 2026년에는",
+    "description": "농업기술 데이터 플랫폼 대국민 서비스 확대",
     "ageGroups": [
       "all"
     ],
@@ -1003,7 +997,7 @@ export const policies_agriculture: Policy[] = [
     "category": "agriculture",
     "department": "산림청",
     "pageNumber": 270,
-    "description": "그간 임업후계자 등록을 위해서는 연령(55세 미만) 요건을 충족해야 했으나, 고령화 추세 등을",
+    "description": "임업후계자 연령 제한 폐지",
     "ageGroups": [
       "all"
     ],

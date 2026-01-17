@@ -7,7 +7,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 274,
-    "description": "전역 후에도 생업을 뒤로 하고 병역의무를 성실히 이행하고 있는 예비군들을 위해, 예비군훈련",
+    "description": "예비군 훈련비 실비 수준 인상",
     "ageGroups": [
       "all"
     ],
@@ -27,7 +27,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 275,
-    "description": "군 초급간부의 장기복무 유도와 사기진작을 위해 관련 법 시행 이후 임관 간부 중 장기복무",
+    "description": "군 간부 자산형성 도약적금 출시",
     "ageGroups": [
       "all"
     ],
@@ -47,14 +47,12 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 276,
-    "description": "격오지 및 전방 도서지역 등 특수한 교육환경을 딛고 대학에 진학한 군무원 자녀의 학업 격려를",
+    "description": "군무원 자녀에게도 꿈도전지원금 지급",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "교육",
-      "환경",
       "지원금",
       "국방부",
       "기타"
@@ -69,13 +67,12 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 277,
-    "description": "잦은 전학 및 격오지 거주 등으로 학업에 어려움을 겪는 군인자녀들의 열악한 교육여건을",
+    "description": "군인자녀 전형 자율형 공립고 설립",
     "ageGroups": [
       "all"
     ],
     "gender": "male",
     "keywords": [
-      "교육",
       "군인",
       "국방부",
       "기타"
@@ -90,14 +87,12 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 278,
-    "description": "그간 장병들에게 ▲ 입대 전 입영 신청, ▲ 복무 중 신분 인증, 교육 수강, 복지시설 예약, ▲ 전역",
+    "description": "군 장병을 위한 맞춤형 통합 서비스 플랫폼(‘장병e음’) 제공",
     "ageGroups": [
       "all"
     ],
     "gender": "male",
     "keywords": [
-      "복지",
-      "교육",
       "국방부",
       "기타"
     ],
@@ -111,7 +106,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 279,
-    "description": "지속적인 식자재 물가상승에도 불구하고 지속 동결되어왔던 장병 기본급식비 단가가 2025년",
+    "description": "군 장병 급식비 15,000원으로 인상",
     "ageGroups": [
       "all"
     ],
@@ -130,13 +125,12 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 280,
-    "description": "전 장병이 군 입대 후 손쉽게 드론 비행기술을 숙달하고, 필요한 자격을 취득할 수 있는 환경을",
+    "description": "군 드론 전문인력 50만명 양성",
     "ageGroups": [
       "all"
     ],
-    "gender": "male",
+    "gender": "all",
     "keywords": [
-      "환경",
       "국방부",
       "기타"
     ],
@@ -150,7 +144,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "국방부",
     "pageNumber": 281,
-    "description": "국방부는 헌법적 가치를 수호하는 국민의 군대 구현을 위해 전 장병이 ‘국가와 국민에",
+    "description": "‘민주주의와 헌법수호’ 장병 교육 강화",
     "ageGroups": [
       "all"
     ],
@@ -170,7 +164,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "조달청",
     "pageNumber": 282,
-    "description": "|우리 장병들이<br>입는 군수품,<br>안정적 공급을<br>위해 업체<br>생산능력<br>확인기준 강화|● \u0007생산능력 확인을 생산설비<br>위주의 1회성 확인<br>- \u0007(섬유제품) 사업금액에 관계없이<br>설비 각 1대이상 보유<br>● \u0007업체 생산능력 확인대상품목<br>선정 주관기관<br>- 주관기관 : 방위사업청<br>● \u0007생산능력 확인을 입찰...",
+    "description": "군납업체 생산능력 심사 강화",
     "ageGroups": [
       "all"
     ],
@@ -188,7 +182,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 283,
-    "description": "병역·입영판정검사 시 안면인식을 활용한 본인확인 시스템이 도입됩니다.",
+    "description": "병역판정검사 안면인식 본인확인 도입",
     "ageGroups": [
       "all"
     ],
@@ -207,7 +201,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 284,
-    "description": "병역의무 기피자*의 인적사항 등 공개항목을 확대합니다.",
+    "description": "병역의무 기피자*의 인적사항 등 공개항목을 확대함",
     "ageGroups": [
       "all"
     ],
@@ -226,7 +220,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 285,
-    "description": "대학진학을 사유로 입영일자 연기를 신청하는 사람은, 신청 즉시 처리결과를 확인할 수 있게",
+    "description": "대학진학 예정자 입영일자 연기 자동처리 시행",
     "ageGroups": [
       "all"
     ],
@@ -245,7 +239,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 286,
-    "description": "2026년 1월 접수(2026년 4월 입영)부터 현역 모집병 선발 평가항목이 개선됩니다.",
+    "description": "2026년 1월 접수부터 현역 모집병 선발 평가항목이 개선됨",
     "ageGroups": [
       "all"
     ],
@@ -264,7 +258,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 287,
-    "description": "‘예비군 출산휴가’ 및 ‘배우자 난임치료(시험관 시술)’ 사유 동원훈련(Ⅰ형) 연기가 가능해집니다.",
+    "description": "예비군 출산·육아로 인한 훈련 연기 허용",
     "ageGroups": [
       "all"
     ],
@@ -285,7 +279,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 288,
-    "description": "‘주요업무 수행’ 사유 동원훈련(Ⅰ형) 연기기한이 확대됩니다.",
+    "description": "‘주요업무 수행’ 사유 동원훈련 연기기한이 확대됨",
     "ageGroups": [
       "all"
     ],
@@ -305,13 +299,12 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 289,
-    "description": "사회복무요원 소집대상자 중 기초생활수급자, 차상위계층, 한부모가족 지원대상자는 학업을",
+    "description": "사회복무요원 경제적 배려대상자 병역이행 지원",
     "ageGroups": [
       "all"
     ],
     "gender": "all",
     "keywords": [
-      "한부모",
       "병무청",
       "기타"
     ],
@@ -325,7 +318,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 290,
-    "description": "사회복무요원의 군사교육소집* 기간 중 복무에 대한 기본사항을 미리 교육하여 복무적응을",
+    "description": "전체 사회복무요원 대상 복무적응교육 확대 실시",
     "ageGroups": [
       "all"
     ],
@@ -345,7 +338,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 291,
-    "description": "사회복무요원 복무기본교육과정 반별 인원을 기존 40명에서 30명으로 축소하여 소규모·참여형",
+    "description": "사회복무요원 복무기본교육 반별 인원 축소 등 교육환경 개선",
     "ageGroups": [
       "all"
     ],
@@ -366,7 +359,7 @@ export const policies_defense: Policy[] = [
     "category": "defense",
     "department": "병무청",
     "pageNumber": 292,
-    "description": "병역지정업체(연구기관) 선정 기준 중 연구전담요원의 자격 기준에 석사학위 및 박사학위",
+    "description": "병역지정업체(연구기관) 선정기준 개선",
     "ageGroups": [
       "all"
     ],
